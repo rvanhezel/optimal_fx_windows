@@ -1,53 +1,53 @@
-03/02/2025 20:58:09.259 - INFO - Logger initialized
-03/02/2025 20:58:09.260 - INFO - Configured run with: 5 minute tick interval,  EUR/USD FX rate, 90 minute horizon and 1 year historical data
-03/02/2025 20:58:09.260 - INFO - Reading data from csv
-03/02/2025 20:58:09.271 - DEBUG - Date range: 2025-01-09 to 2025-01-31
-03/02/2025 20:58:09.299 - DEBUG - Computing high and low windows for: 2025-01-09 03:45:00
-03/02/2025 20:58:09.349 - DEBUG - For 2025-01-09 found 18 windows containing the high
-03/02/2025 20:58:09.349 - DEBUG - For 2025-01-09, found 18 windows containing the low
-03/02/2025 20:58:09.349 - DEBUG - Computing high and low windows for: 2025-01-10 03:45:00
-03/02/2025 20:58:09.432 - DEBUG - For 2025-01-10 found 18 windows containing the high
-03/02/2025 20:58:09.432 - DEBUG - For 2025-01-10, found 18 windows containing the low
-03/02/2025 20:58:09.432 - DEBUG - Computing high and low windows for: 2025-01-13 03:45:00
-03/02/2025 20:58:09.481 - DEBUG - For 2025-01-13 found 18 windows containing the high
-03/02/2025 20:58:09.482 - DEBUG - For 2025-01-13, found 18 windows containing the low
-03/02/2025 20:58:09.482 - DEBUG - Computing high and low windows for: 2025-01-14 03:45:00
-03/02/2025 20:58:09.532 - DEBUG - For 2025-01-14 found 18 windows containing the high
-03/02/2025 20:58:09.548 - DEBUG - For 2025-01-14, found 18 windows containing the low
-03/02/2025 20:58:09.548 - DEBUG - Computing high and low windows for: 2025-01-15 03:45:00
-03/02/2025 20:58:09.599 - DEBUG - For 2025-01-15 found 18 windows containing the high
-03/02/2025 20:58:09.599 - DEBUG - For 2025-01-15, found 18 windows containing the low
-03/02/2025 20:58:09.599 - DEBUG - Computing high and low windows for: 2025-01-16 03:45:00
-03/02/2025 20:58:09.669 - DEBUG - For 2025-01-16 found 18 windows containing the high
-03/02/2025 20:58:09.669 - DEBUG - For 2025-01-16, found 18 windows containing the low
-03/02/2025 20:58:09.669 - DEBUG - Computing high and low windows for: 2025-01-17 03:45:00
-03/02/2025 20:58:09.733 - DEBUG - For 2025-01-17 found 18 windows containing the high
-03/02/2025 20:58:09.734 - DEBUG - For 2025-01-17, found 18 windows containing the low
-03/02/2025 20:58:09.734 - DEBUG - Computing high and low windows for: 2025-01-21 03:45:00
-03/02/2025 20:58:09.799 - DEBUG - For 2025-01-21 found 18 windows containing the high
-03/02/2025 20:58:09.799 - DEBUG - For 2025-01-21, found 18 windows containing the low
-03/02/2025 20:58:09.799 - DEBUG - Computing high and low windows for: 2025-01-22 03:45:00
-03/02/2025 20:58:09.866 - DEBUG - For 2025-01-22 found 18 windows containing the high
-03/02/2025 20:58:09.866 - DEBUG - For 2025-01-22, found 18 windows containing the low
-03/02/2025 20:58:09.866 - DEBUG - Computing high and low windows for: 2025-01-23 03:45:00
-03/02/2025 20:58:09.926 - DEBUG - For 2025-01-23 found 18 windows containing the high
-03/02/2025 20:58:09.927 - DEBUG - For 2025-01-23, found 18 windows containing the low
-03/02/2025 20:58:09.927 - DEBUG - Computing high and low windows for: 2025-01-24 03:45:00
-03/02/2025 20:58:09.983 - DEBUG - For 2025-01-24 found 18 windows containing the high
-03/02/2025 20:58:09.983 - DEBUG - For 2025-01-24, found 7 windows containing the low
-03/02/2025 20:58:09.983 - DEBUG - Computing high and low windows for: 2025-01-27 03:45:00
-03/02/2025 20:58:10.050 - DEBUG - For 2025-01-27 found 18 windows containing the high
-03/02/2025 20:58:10.051 - DEBUG - For 2025-01-27, found 18 windows containing the low
-03/02/2025 20:58:10.051 - DEBUG - Computing high and low windows for: 2025-01-28 03:45:00
-03/02/2025 20:58:10.102 - DEBUG - For 2025-01-28 found 36 windows containing the high
-03/02/2025 20:58:10.102 - DEBUG - For 2025-01-28, found 18 windows containing the low
-03/02/2025 20:58:10.102 - DEBUG - Computing high and low windows for: 2025-01-29 03:45:00
-03/02/2025 20:58:10.152 - DEBUG - For 2025-01-29 found 18 windows containing the high
-03/02/2025 20:58:10.166 - DEBUG - For 2025-01-29, found 23 windows containing the low
-03/02/2025 20:58:10.166 - DEBUG - Computing high and low windows for: 2025-01-30 03:45:00
-03/02/2025 20:58:10.225 - DEBUG - For 2025-01-30 found 18 windows containing the high
-03/02/2025 20:58:10.226 - DEBUG - For 2025-01-30, found 18 windows containing the low
-03/02/2025 20:58:10.226 - DEBUG - Computing high and low windows for: 2025-01-31 03:45:00
-03/02/2025 20:58:10.299 - DEBUG - For 2025-01-31 found 18 windows containing the high
-03/02/2025 20:58:10.299 - DEBUG - For 2025-01-31, found 18 windows containing the low
-03/02/2025 20:58:10.299 - DEBUG - Exporting empirical distributions to csv
+03/02/2025 21:37:42.374 - INFO - Logger initialized
+03/02/2025 21:37:42.374 - INFO - Configured run with: 5 minute tick interval,  EUR/USD FX rate, 90 minute horizon and 1 year historical data
+03/02/2025 21:37:42.374 - INFO - Reading data from csv
+03/02/2025 21:37:42.390 - DEBUG - Date range: 2025-01-09 to 2025-01-31
+03/02/2025 21:37:42.408 - DEBUG - Computing high and low windows for: 2025-01-09 03:45:00
+03/02/2025 21:37:42.469 - DEBUG - For 2025-01-09 found 18 windows containing the high
+03/02/2025 21:37:42.469 - DEBUG - For 2025-01-09, found 18 windows containing the low
+03/02/2025 21:37:42.469 - DEBUG - Computing high and low windows for: 2025-01-10 03:45:00
+03/02/2025 21:37:42.537 - DEBUG - For 2025-01-10 found 18 windows containing the high
+03/02/2025 21:37:42.537 - DEBUG - For 2025-01-10, found 18 windows containing the low
+03/02/2025 21:37:42.537 - DEBUG - Computing high and low windows for: 2025-01-13 03:45:00
+03/02/2025 21:37:42.629 - DEBUG - For 2025-01-13 found 18 windows containing the high
+03/02/2025 21:37:42.629 - DEBUG - For 2025-01-13, found 18 windows containing the low
+03/02/2025 21:37:42.629 - DEBUG - Computing high and low windows for: 2025-01-14 03:45:00
+03/02/2025 21:37:42.692 - DEBUG - For 2025-01-14 found 18 windows containing the high
+03/02/2025 21:37:42.692 - DEBUG - For 2025-01-14, found 18 windows containing the low
+03/02/2025 21:37:42.692 - DEBUG - Computing high and low windows for: 2025-01-15 03:45:00
+03/02/2025 21:37:42.753 - DEBUG - For 2025-01-15 found 18 windows containing the high
+03/02/2025 21:37:42.753 - DEBUG - For 2025-01-15, found 18 windows containing the low
+03/02/2025 21:37:42.753 - DEBUG - Computing high and low windows for: 2025-01-16 03:45:00
+03/02/2025 21:37:42.816 - DEBUG - For 2025-01-16 found 18 windows containing the high
+03/02/2025 21:37:42.817 - DEBUG - For 2025-01-16, found 18 windows containing the low
+03/02/2025 21:37:42.818 - DEBUG - Computing high and low windows for: 2025-01-17 03:45:00
+03/02/2025 21:37:42.897 - DEBUG - For 2025-01-17 found 18 windows containing the high
+03/02/2025 21:37:42.897 - DEBUG - For 2025-01-17, found 18 windows containing the low
+03/02/2025 21:37:42.899 - DEBUG - Computing high and low windows for: 2025-01-21 03:45:00
+03/02/2025 21:37:42.953 - DEBUG - For 2025-01-21 found 18 windows containing the high
+03/02/2025 21:37:42.953 - DEBUG - For 2025-01-21, found 18 windows containing the low
+03/02/2025 21:37:42.953 - DEBUG - Computing high and low windows for: 2025-01-22 03:45:00
+03/02/2025 21:37:43.025 - DEBUG - For 2025-01-22 found 18 windows containing the high
+03/02/2025 21:37:43.026 - DEBUG - For 2025-01-22, found 18 windows containing the low
+03/02/2025 21:37:43.027 - DEBUG - Computing high and low windows for: 2025-01-23 03:45:00
+03/02/2025 21:37:43.088 - DEBUG - For 2025-01-23 found 18 windows containing the high
+03/02/2025 21:37:43.091 - DEBUG - For 2025-01-23, found 18 windows containing the low
+03/02/2025 21:37:43.091 - DEBUG - Computing high and low windows for: 2025-01-24 03:45:00
+03/02/2025 21:37:43.150 - DEBUG - For 2025-01-24 found 18 windows containing the high
+03/02/2025 21:37:43.151 - DEBUG - For 2025-01-24, found 7 windows containing the low
+03/02/2025 21:37:43.152 - DEBUG - Computing high and low windows for: 2025-01-27 03:45:00
+03/02/2025 21:37:43.234 - DEBUG - For 2025-01-27 found 18 windows containing the high
+03/02/2025 21:37:43.235 - DEBUG - For 2025-01-27, found 18 windows containing the low
+03/02/2025 21:37:43.235 - DEBUG - Computing high and low windows for: 2025-01-28 03:45:00
+03/02/2025 21:37:43.312 - DEBUG - For 2025-01-28 found 36 windows containing the high
+03/02/2025 21:37:43.312 - DEBUG - For 2025-01-28, found 18 windows containing the low
+03/02/2025 21:37:43.315 - DEBUG - Computing high and low windows for: 2025-01-29 03:45:00
+03/02/2025 21:37:43.372 - DEBUG - For 2025-01-29 found 18 windows containing the high
+03/02/2025 21:37:43.373 - DEBUG - For 2025-01-29, found 23 windows containing the low
+03/02/2025 21:37:43.373 - DEBUG - Computing high and low windows for: 2025-01-30 03:45:00
+03/02/2025 21:37:43.445 - DEBUG - For 2025-01-30 found 18 windows containing the high
+03/02/2025 21:37:43.446 - DEBUG - For 2025-01-30, found 18 windows containing the low
+03/02/2025 21:37:43.447 - DEBUG - Computing high and low windows for: 2025-01-31 03:45:00
+03/02/2025 21:37:43.509 - DEBUG - For 2025-01-31 found 18 windows containing the high
+03/02/2025 21:37:43.509 - DEBUG - For 2025-01-31, found 18 windows containing the low
+03/02/2025 21:37:43.509 - DEBUG - Exporting empirical distributions to csv
