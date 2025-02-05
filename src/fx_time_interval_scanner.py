@@ -1,21 +1,23 @@
-from src.logger import Logger
-from twelvedata import TDClient
 import pandas as pd
 import logging
 import os
-from dotenv import load_dotenv
 from src.utils import high_low_per_window, create_daily_date_schedule, create_overlapping_time_grid, shift_date_by_period
-from src.configuration import Configuration
 from src.market_data_loader import load_market_data
 
 
 class FxTimeIntervalScanner:
 
-    def __init__(self, tick_interval, fx_rate, high_low_interval, historical_data_range):
+    def __init__(self, 
+                 tick_interval, 
+                 fx_rate, 
+                 high_low_interval, 
+                 historical_data_range, 
+                 timezone=None):
         self.tick_interval = tick_interval
         self.fx_rate = fx_rate
         self.high_low_interval = high_low_interval
         self.historical_data_range = historical_data_range
+        self.timezone = timezone
 
         self.high_counter_df = None
         self.low_counter_df = None
@@ -32,9 +34,9 @@ class FxTimeIntervalScanner:
 
         # Load market data
         fx_data_df = load_market_data(self.fx_rate,
-                                    self.tick_interval,
-                                    first_day,
-                                    last_day)
+                                      self.tick_interval,
+                                      first_day,
+                                      last_day)
 
         # Check first date from historical fx data. 
         # Shift by one day as first date is never full with TwelveData
@@ -115,7 +117,11 @@ class FxTimeIntervalScanner:
 
 
         self.high_counter_df = pd.DataFrame(list(high_counter.items()), columns=['window', 'count'])
+        self.high_counter_df['probability'] = self.high_counter_df['count'] / len(historical_period)
+
         self.low_counter_df = pd.DataFrame(list(low_counter.items()), columns=['window', 'count'])
+        self.low_counter_df['probability'] = self.low_counter_df['count'] / len(historical_period)
+
 
     def export_results(self):
         if not os.path.exists('output'):

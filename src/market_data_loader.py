@@ -30,8 +30,11 @@ def load_market_data(fx_cross: str = None,
 
         fx_data_df.to_csv(os.path.join('data', f'fx_time_series.csv'))
     else:
-        logging.info(f'Reading data from csv')
-        fx_data_df = pd.read_csv(os.path.join('data', f'fx_time_series.csv'), index_col='datetime')
+        data_file = os.path.join('data', f'full_fx_data.csv')
+        logging.info(f'Reading data from csv: {data_file}')
+        
+        # fx_data_df = pd.read_csv(os.path.join('data', f'fx_time_series.csv'), index_col='datetime')
+        fx_data_df = pd.read_csv(data_file, index_col='datetime')
         fx_data_df.index = pd.to_datetime(fx_data_df.index)
 
     fx_data_df.index = pd.Series(fx_data_df.index)
