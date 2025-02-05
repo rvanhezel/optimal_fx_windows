@@ -1,10 +1,11 @@
-from logger import Logger
+from src.logger import Logger
 from twelvedata import TDClient
 import pandas as pd
 import logging
 import os
 from dotenv import load_dotenv
-from utils import high_low_per_window, create_daily_date_schedule, create_overlapping_time_grid
+from src.utils import high_low_per_window, create_daily_date_schedule, create_overlapping_time_grid, shift_date_by_period
+from src.configuration import Configuration
 
 
 def load_market_data(fx_cross: str = None,
@@ -41,25 +42,25 @@ if __name__ == '__main__':
     # Load API keys
     load_dotenv()
 
-    # Initialize logger
-    log = Logger()
+    Logger()
+    cfg = Configuration('run.cfg')
 
-    tick_interval = 5 #min
-    fx_cross = 'EUR/USD'
-    high_low_interval = 90 #minutes
-    historical_data_range = 1 #years - my current dataset is limited to approximately 1month of data
+    tick_interval = cfg.tick_interval
+    fx_rate = cfg.fx_rates[0]
+    high_low_interval = cfg.low_high_interval
+    historical_data_range = cfg.historical_data_horizon
 
-    msg = f"Configured run with: {tick_interval} minute tick interval, "
-    msg += f" {fx_cross} FX rate, {high_low_interval} minute horizon and "
-    msg += f"{historical_data_range} year historical data"
+    msg = f"Configured run with: {tick_interval} tick interval, "
+    msg += f" {fx_rate} FX rate, {high_low_interval} horizon and "
+    msg += f"{historical_data_range} historical data"
     logging.info(msg)
 
     # Define full date range 
     last_day = pd.Timestamp.today() - pd.Timedelta(days=3)
-    first_day = last_day - pd.DateOffset(years=historical_data_range)
+    first_day = shift_date_by_period(historical_data_range, last_day, "-")
 
     # Load market data
-    fx_data_df = load_market_data(fx_cross,
+    fx_data_df = load_market_data(fx_rate,
                                   tick_interval,
                                   first_day,
                                   last_day)
@@ -67,10 +68,9 @@ if __name__ == '__main__':
     # Check first date from historical fx data. 
     # Shift by one day as first date is never full with TwelveData
     first_day = fx_data_df.index.min() + pd.Timedelta(days=1)
-    logging.debug(f"Date range: {first_day.strftime('%Y-%m-%d')} to {last_day.strftime('%Y-%m-%d')}")
+    logging.debug(f"Actual date range: {first_day.strftime('%Y-%m-%d')} to {last_day.strftime('%Y-%m-%d')}")
 
     # Compute the historical date schedule over which to compute the highs and lows,
-    # Currently over 1 year
     historical_period = create_daily_date_schedule(first_day, last_day)        
 
     # Define intra-day time windows
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     low_counter = {k: 0 for k in overlapping_intra_day_grid}
 
     for current_date in historical_period:
-        logging.debug(f'Computing high and low windows for: {current_date}')
+        logging.debug(f'Computing {fx_rate} high and low windows for: {current_date}')
 
         date_open = pd.Timestamp(current_date.year, current_date.month, current_date.day, 0, 0)
         date_close = date_open + pd.Timedelta(days=1)
@@ -147,5 +147,26 @@ if __name__ == '__main__':
     low_counter_df = pd.DataFrame(list(low_counter.items()), columns=['window', 'count'])
 
     logging.debug(f"Exporting empirical distributions to csv")
-    high_counter_df.to_csv(os.path.join('output', 'high_counter.csv'), index=False)
-    low_counter_df.to_csv(os.path.join('output', 'low_counter.csv'), index=False)
+    high_counter_df.to_csv(os.path.join('output', 'market_high_counter.csv'), index=False)
+    low_counter_df.to_csv(os.path.join('output', 'market_low_counter.csv'), index=False)
+
+    high_counter_df.sort_values(by='count', ascending=False, inplace=True)
+    low_counter_df.sort_values(by='count', ascending=False, inplace=True)
+
+    high_top3 = sorted(set(high_counter_df['count']), reverse=True)[:3]  # Sort in descending order and take the top 3
+    low_top3 = sorted(set(low_counter_df['count']), reverse=True)[:3]  # Sort in descending order and take the top 3
+
+    high_top_3_rows = pd.DataFrame()
+    for value in high_top3:
+        high_top_3_rows = pd.concat([high_top_3_rows, high_counter_df[high_counter_df['count'] == value]])
+        if high_top_3_rows.shape[0] >= 3:
+            break
+
+    low_top_3_rows = pd.DataFrame()
+    for value in low_top3:
+        low_top_3_rows = pd.concat([low_top_3_rows, low_counter_df[low_counter_df['count'] == value]])
+        if low_top_3_rows.shape[0] >= 3:
+            break
+
+    high_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_high.csv'), index=False)
+    low_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_low.csv'), index=False)

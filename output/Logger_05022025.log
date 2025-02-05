@@ -1,0 +1,56 @@
+05/02/2025 13:32:26.078 - INFO - Logger initialized
+05/02/2025 13:32:26.078 - INFO - Configured run with: 5min tick interval,  EURUSD FX rate, 90min horizon and 1Y historical data
+05/02/2025 13:32:26.078 - INFO - Reading data from csv
+05/02/2025 13:32:26.098 - DEBUG - Actual date range: 2025-01-09 to 2025-02-02
+05/02/2025 13:32:26.112 - DEBUG - Computing EURUSD high and low windows for: 2025-01-09 03:45:00
+05/02/2025 13:32:26.173 - DEBUG - For 2025-01-09 found 18 windows containing the high
+05/02/2025 13:32:26.175 - DEBUG - For 2025-01-09, found 18 windows containing the low
+05/02/2025 13:32:26.176 - DEBUG - Computing EURUSD high and low windows for: 2025-01-10 03:45:00
+05/02/2025 13:32:26.233 - DEBUG - For 2025-01-10 found 18 windows containing the high
+05/02/2025 13:32:26.233 - DEBUG - For 2025-01-10, found 18 windows containing the low
+05/02/2025 13:32:26.233 - DEBUG - Computing EURUSD high and low windows for: 2025-01-13 03:45:00
+05/02/2025 13:32:26.281 - DEBUG - For 2025-01-13 found 18 windows containing the high
+05/02/2025 13:32:26.281 - DEBUG - For 2025-01-13, found 18 windows containing the low
+05/02/2025 13:32:26.281 - DEBUG - Computing EURUSD high and low windows for: 2025-01-14 03:45:00
+05/02/2025 13:32:26.341 - DEBUG - For 2025-01-14 found 18 windows containing the high
+05/02/2025 13:32:26.341 - DEBUG - For 2025-01-14, found 18 windows containing the low
+05/02/2025 13:32:26.341 - DEBUG - Computing EURUSD high and low windows for: 2025-01-15 03:45:00
+05/02/2025 13:32:26.397 - DEBUG - For 2025-01-15 found 18 windows containing the high
+05/02/2025 13:32:26.398 - DEBUG - For 2025-01-15, found 18 windows containing the low
+05/02/2025 13:32:26.398 - DEBUG - Computing EURUSD high and low windows for: 2025-01-16 03:45:00
+05/02/2025 13:32:26.462 - DEBUG - For 2025-01-16 found 18 windows containing the high
+05/02/2025 13:32:26.462 - DEBUG - For 2025-01-16, found 18 windows containing the low
+05/02/2025 13:32:26.462 - DEBUG - Computing EURUSD high and low windows for: 2025-01-17 03:45:00
+05/02/2025 13:32:26.518 - DEBUG - For 2025-01-17 found 18 windows containing the high
+05/02/2025 13:32:26.519 - DEBUG - For 2025-01-17, found 18 windows containing the low
+05/02/2025 13:32:26.519 - DEBUG - Computing EURUSD high and low windows for: 2025-01-21 03:45:00
+05/02/2025 13:32:26.576 - DEBUG - For 2025-01-21 found 18 windows containing the high
+05/02/2025 13:32:26.576 - DEBUG - For 2025-01-21, found 18 windows containing the low
+05/02/2025 13:32:26.576 - DEBUG - Computing EURUSD high and low windows for: 2025-01-22 03:45:00
+05/02/2025 13:32:26.632 - DEBUG - For 2025-01-22 found 18 windows containing the high
+05/02/2025 13:32:26.632 - DEBUG - For 2025-01-22, found 18 windows containing the low
+05/02/2025 13:32:26.632 - DEBUG - Computing EURUSD high and low windows for: 2025-01-23 03:45:00
+05/02/2025 13:32:26.693 - DEBUG - For 2025-01-23 found 18 windows containing the high
+05/02/2025 13:32:26.693 - DEBUG - For 2025-01-23, found 18 windows containing the low
+05/02/2025 13:32:26.693 - DEBUG - Computing EURUSD high and low windows for: 2025-01-24 03:45:00
+05/02/2025 13:32:26.759 - DEBUG - For 2025-01-24 found 18 windows containing the high
+05/02/2025 13:32:26.765 - DEBUG - For 2025-01-24, found 7 windows containing the low
+05/02/2025 13:32:26.765 - DEBUG - Computing EURUSD high and low windows for: 2025-01-27 03:45:00
+05/02/2025 13:32:26.827 - DEBUG - For 2025-01-27 found 18 windows containing the high
+05/02/2025 13:32:26.827 - DEBUG - For 2025-01-27, found 18 windows containing the low
+05/02/2025 13:32:26.828 - DEBUG - Computing EURUSD high and low windows for: 2025-01-28 03:45:00
+05/02/2025 13:32:26.880 - DEBUG - For 2025-01-28 found 36 windows containing the high
+05/02/2025 13:32:26.880 - DEBUG - For 2025-01-28, found 18 windows containing the low
+05/02/2025 13:32:26.880 - DEBUG - Computing EURUSD high and low windows for: 2025-01-29 03:45:00
+05/02/2025 13:32:26.942 - DEBUG - For 2025-01-29 found 18 windows containing the high
+05/02/2025 13:32:26.942 - DEBUG - For 2025-01-29, found 23 windows containing the low
+05/02/2025 13:32:26.942 - DEBUG - Computing EURUSD high and low windows for: 2025-01-30 03:45:00
+05/02/2025 13:32:26.992 - DEBUG - For 2025-01-30 found 18 windows containing the high
+05/02/2025 13:32:26.992 - DEBUG - For 2025-01-30, found 18 windows containing the low
+05/02/2025 13:32:26.992 - DEBUG - Computing EURUSD high and low windows for: 2025-01-31 03:45:00
+05/02/2025 13:32:27.081 - DEBUG - For 2025-01-31 found 18 windows containing the high
+05/02/2025 13:32:27.082 - DEBUG - For 2025-01-31, found 18 windows containing the low
+05/02/2025 13:32:27.083 - DEBUG - Computing EURUSD high and low windows for: 2025-02-03 03:45:00
+05/02/2025 13:32:27.129 - DEBUG - For 2025-02-03 found 0 windows containing the high
+05/02/2025 13:32:27.141 - DEBUG - For 2025-02-03, found 0 windows containing the low
+05/02/2025 13:32:27.141 - DEBUG - Exporting empirical distributions to csv

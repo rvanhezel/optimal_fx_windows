@@ -1,0 +1,11 @@
+window,count
+"(datetime.time(7, 5), datetime.time(8, 35))",5
+"(datetime.time(7, 10), datetime.time(8, 40))",4
+"(datetime.time(8, 25), datetime.time(9, 55))",4
+"(datetime.time(8, 5), datetime.time(9, 35))",4
+"(datetime.time(7, 15), datetime.time(8, 45))",4
+"(datetime.time(8, 15), datetime.time(9, 45))",4
+"(datetime.time(8, 10), datetime.time(9, 40))",4
+"(datetime.time(8, 30), datetime.time(10, 0))",4
+"(datetime.time(8, 0), datetime.time(9, 30))",4
+"(datetime.time(8, 20), datetime.time(9, 50))",4
