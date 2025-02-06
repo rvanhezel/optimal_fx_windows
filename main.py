@@ -25,7 +25,8 @@ if __name__ == '__main__':
                 cfg.historical_data_horizon,
                 cfg.historical_data_filename,
                 cfg.spread,
-                cfg.market_data_timezone)
+                cfg.market_data_timezone,
+                cfg.market_open_time)
 
             scanner.run_scanner()
             scanner.export_results()

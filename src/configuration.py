@@ -23,6 +23,7 @@ class Configuration:
         self.historical_data_horizon = Period(self.config.get('Run', 'historical_data_horizon'))
         self.tick_interval = Period(self.config.get('Run', 'tick_interval'))
         self.low_high_interval = Period(self.config.get('Run', 'low_high_interval'))
+        self.market_open_time = self.config.get('Run', 'market_open_time')
 
 
     def _configure_log(self, log_level: str):

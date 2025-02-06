@@ -3,9 +3,6 @@ from twelvedata import TDClient
 import pandas as pd
 import logging
 import os
-from dotenv import load_dotenv
-from src.utils import high_low_per_window, create_daily_date_schedule, create_overlapping_time_grid, shift_date_by_period
-from src.configuration import Configuration
 
 
 def load_market_data(fx_cross,

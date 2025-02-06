@@ -14,7 +14,8 @@ class FxTimeIntervalScanner:
                  historical_data_range,
                  historical_data_filename,
                  spread=0.0,
-                 timezone=None):
+                 timezone=None,
+                 market_open_time: str = None):
         self.tick_interval = tick_interval
         self.fx_rate = fx_rate
         self.high_low_interval = high_low_interval
@@ -22,8 +23,10 @@ class FxTimeIntervalScanner:
         self.historical_data_filename = historical_data_filename
         self.spread = spread
         self.timezone = timezone
+        self.market_open_time = market_open_time
 
-        self.ref_timezone = 'GMT'
+        # self.ref_timezone = 'GMT'
+        self.ref_timezone = 'CET'
         self.high_counter_df = None
         self.low_counter_df = None
         self.low_or_high_counter_df = None
@@ -49,6 +52,7 @@ class FxTimeIntervalScanner:
         fx_data_df.index = fx_data_df.index.tz_localize(self.timezone)
         fx_data_df.index = fx_data_df.index.tz_convert(self.ref_timezone)
 
+
         # Check first and last date from loaded fx data. 
         # Shift by one day as first date is never full with TwelveData
         first_day = fx_data_df.index.min() + pd.Timedelta(days=1)
@@ -59,7 +63,14 @@ class FxTimeIntervalScanner:
         historical_period = create_daily_date_schedule(first_day, last_day)        
 
         # Define intra-day time windows
-        start = pd.Timestamp(last_day.year, last_day.month, last_day.day, 0, 0, tz=self.ref_timezone)
+        start = pd.Timestamp(
+            last_day.year, 
+            last_day.month, 
+            last_day.day, 
+            int(self.market_open_time[:2]), 
+            int(self.market_open_time[2:]),
+            tz=self.ref_timezone)
+        
         overlapping_intra_day_grid = create_overlapping_time_grid(
             start, 
             start + pd.Timedelta(days=1), 
@@ -73,11 +84,21 @@ class FxTimeIntervalScanner:
         low_counter = {k: 0 for k in overlapping_intra_day_grid}
         low_or_high_counter = {k: 0 for k in overlapping_intra_day_grid}
 
+        dates = pd.DataFrame([date.date() for date in historical_period])
+        dates.to_csv('dates.csv', index=False)
+
         for current_date in historical_period:
             logging.info(f'Computing {self.fx_rate} high and low windows for: {current_date.strftime('%Y-%m-%d')}')
 
-            date_open = pd.Timestamp(current_date.year, current_date.month, current_date.day, 0, 0, tz=self.ref_timezone)
+            date_open = pd.Timestamp(current_date.year, 
+                                     current_date.month, 
+                                     current_date.day, 
+                                     int(self.market_open_time[:2]), 
+                                     int(self.market_open_time[2:]), 
+                                     tz=self.ref_timezone)
             date_close = date_open + pd.Timedelta(days=1)
+            logging.info(f'Trading day: {date_open} to {date_close} {self.ref_timezone}')
+
 
             # Set current date time windows
             windows = create_overlapping_time_grid(
@@ -98,17 +119,22 @@ class FxTimeIntervalScanner:
                 for window in windows], 
                 columns=["window", "low", "high"])
 
-            max_value = high_low_windows['high'].max() - self.spread
-            found_high_windows = high_low_windows[high_low_windows['high'] >= max_value]['window'].to_list()
+            daily_high = current_fx_data['high'].max() - self.spread
+            found_high_windows = high_low_windows[high_low_windows['high'] >= daily_high]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')} found {len(found_high_windows)} windows containing the high")
 
-            min_value = high_low_windows['low'].min() + self.spread
-            found_low_windows = high_low_windows[high_low_windows['low'] <= min_value]['window'].to_list()
+            daily_low = current_fx_data['low'].min() + self.spread
+            found_low_windows = high_low_windows[high_low_windows['low'] <= daily_low]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_windows)} windows containing the low")
 
-            low_and_high_query = (high_low_windows['high'] >= max_value) | (high_low_windows['low'] <= min_value)
+            low_and_high_query = (high_low_windows['high'] >= daily_high) | (high_low_windows['low'] <= daily_low)
             found_low_high_windows = high_low_windows[low_and_high_query]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_high_windows)} windows containing the low or high")
+
+            # test = pd.Timestamp(2024, 4, 4, 0, 0, tz=self.ref_timezone)
+
+            # if current_date.date() == test.date():
+            #     a = 5
 
             hw_as_time = [(
                 window[0].to_pydatetime().time(),
