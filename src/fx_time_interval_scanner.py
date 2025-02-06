@@ -25,7 +25,7 @@ class FxTimeIntervalScanner:
         self.timezone = timezone
         self.market_open_time = market_open_time
 
-        # self.ref_timezone = 'GMT'
+        # self.ref_timezone = 'Asia/Bangkok'
         self.ref_timezone = 'CET'
         self.high_counter_df = None
         self.low_counter_df = None
@@ -83,9 +83,7 @@ class FxTimeIntervalScanner:
         high_counter = {k: 0 for k in overlapping_intra_day_grid}
         low_counter = {k: 0 for k in overlapping_intra_day_grid}
         low_or_high_counter = {k: 0 for k in overlapping_intra_day_grid}
-
-        dates = pd.DataFrame([date.date() for date in historical_period])
-        dates.to_csv('dates.csv', index=False)
+        
 
         for current_date in historical_period:
             logging.info(f'Computing {self.fx_rate} high and low windows for: {current_date.strftime('%Y-%m-%d')}')
