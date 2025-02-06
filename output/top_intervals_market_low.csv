@@ -1,5 +1,4 @@
 window,count,probability
-"(datetime.time(16, 45), datetime.time(18, 15))",42,0.1590909090909091
-"(datetime.time(16, 35), datetime.time(18, 5))",40,0.15151515151515152
-"(datetime.time(16, 40), datetime.time(18, 10))",40,0.15151515151515152
-"(datetime.time(16, 50), datetime.time(18, 20))",40,0.15151515151515152
+"(datetime.time(22, 25), datetime.time(23, 55))",95,0.40425531914893614
+"(datetime.time(22, 30), datetime.time(0, 0))",93,0.39574468085106385
+"(datetime.time(22, 20), datetime.time(23, 50))",90,0.3829787234042553

@@ -11,16 +11,22 @@ class FxTimeIntervalScanner:
                  tick_interval, 
                  fx_rate, 
                  high_low_interval, 
-                 historical_data_range, 
+                 historical_data_range,
+                 historical_data_filename,
+                 spread=0.0,
                  timezone=None):
         self.tick_interval = tick_interval
         self.fx_rate = fx_rate
         self.high_low_interval = high_low_interval
         self.historical_data_range = historical_data_range
+        self.historical_data_filename = historical_data_filename
+        self.spread = spread
         self.timezone = timezone
 
+        self.ref_timezone = 'GMT'
         self.high_counter_df = None
         self.low_counter_df = None
+        self.low_or_high_counter_df = None
 
         msg = f"Configured run with: {tick_interval} tick interval, "
         msg += f" {fx_rate} FX rate, {high_low_interval} horizon and "
@@ -28,26 +34,32 @@ class FxTimeIntervalScanner:
         logging.info(msg)
 
     def run_scanner(self):  
-        # Define full date range 
-        last_day = pd.Timestamp.today() - pd.Timedelta(days=3)
+        # Define full date range for when using API
+        last_day = pd.Timestamp.today(tz=self.ref_timezone) - pd.Timedelta(days=1)
         first_day = shift_date_by_period(self.historical_data_range, last_day, "-")
 
         # Load market data
         fx_data_df = load_market_data(self.fx_rate,
                                       self.tick_interval,
                                       first_day,
-                                      last_day)
+                                      last_day,
+                                      self.historical_data_filename)
+        
+        # Adjust for timezone difference
+        fx_data_df.index = fx_data_df.index.tz_localize(self.timezone)
+        fx_data_df.index = fx_data_df.index.tz_convert(self.ref_timezone)
 
-        # Check first date from historical fx data. 
+        # Check first and last date from loaded fx data. 
         # Shift by one day as first date is never full with TwelveData
         first_day = fx_data_df.index.min() + pd.Timedelta(days=1)
-        logging.debug(f"Actual date range: {first_day.strftime('%Y-%m-%d')} to {last_day.strftime('%Y-%m-%d')}")
+        last_day = fx_data_df.index.max() + pd.Timedelta(days=1)
+        logging.info(f"Actual date range: {first_day.strftime('%Y-%m-%d')} to {last_day.strftime('%Y-%m-%d')}")
 
         # Compute the historical date schedule over which to compute the highs and lows,
         historical_period = create_daily_date_schedule(first_day, last_day)        
 
         # Define intra-day time windows
-        start = pd.Timestamp(last_day.year, last_day.month, last_day.day, 0, 0)
+        start = pd.Timestamp(last_day.year, last_day.month, last_day.day, 0, 0, tz=self.ref_timezone)
         overlapping_intra_day_grid = create_overlapping_time_grid(
             start, 
             start + pd.Timedelta(days=1), 
@@ -59,11 +71,12 @@ class FxTimeIntervalScanner:
         # These are used to build the empirical probability distributions
         high_counter = {k: 0 for k in overlapping_intra_day_grid}
         low_counter = {k: 0 for k in overlapping_intra_day_grid}
+        low_or_high_counter = {k: 0 for k in overlapping_intra_day_grid}
 
         for current_date in historical_period:
-            logging.debug(f'Computing {self.fx_rate} high and low windows for: {current_date.strftime('%Y-%m-%d')}')
+            logging.info(f'Computing {self.fx_rate} high and low windows for: {current_date.strftime('%Y-%m-%d')}')
 
-            date_open = pd.Timestamp(current_date.year, current_date.month, current_date.day, 0, 0)
+            date_open = pd.Timestamp(current_date.year, current_date.month, current_date.day, 0, 0, tz=self.ref_timezone)
             date_close = date_open + pd.Timedelta(days=1)
 
             # Set current date time windows
@@ -85,13 +98,17 @@ class FxTimeIntervalScanner:
                 for window in windows], 
                 columns=["window", "low", "high"])
 
-            max_value = high_low_windows['high'].max()
-            found_high_windows = high_low_windows[high_low_windows['high'] == max_value]['window'].to_list()
+            max_value = high_low_windows['high'].max() - self.spread
+            found_high_windows = high_low_windows[high_low_windows['high'] >= max_value]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')} found {len(found_high_windows)} windows containing the high")
 
-            min_value = high_low_windows['low'].min()
-            found_low_windows = high_low_windows[high_low_windows['low'] == min_value]['window'].to_list()
+            min_value = high_low_windows['low'].min() + self.spread
+            found_low_windows = high_low_windows[high_low_windows['low'] <= min_value]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_windows)} windows containing the low")
+
+            low_and_high_query = (high_low_windows['high'] >= max_value) | (high_low_windows['low'] <= min_value)
+            found_low_high_windows = high_low_windows[low_and_high_query]['window'].to_list()
+            logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_high_windows)} windows containing the low or high")
 
             hw_as_time = [(
                 window[0].to_pydatetime().time(),
@@ -102,6 +119,11 @@ class FxTimeIntervalScanner:
                 window[0].to_pydatetime().time(),
                 window[1].to_pydatetime().time(),
                         ) for window in found_low_windows]
+            
+            low_or_high_as_time = [(
+                window[0].to_pydatetime().time(),
+                window[1].to_pydatetime().time(),
+                        ) for window in found_low_high_windows]
 
             for high_window in hw_as_time:
                 if high_window in high_counter:
@@ -114,7 +136,12 @@ class FxTimeIntervalScanner:
                     low_counter[low_window] += 1
                 else:
                     raise ValueError("Problem with time window")
-
+                
+            for low_or_high_window in low_or_high_as_time:
+                if low_or_high_window in low_or_high_counter:
+                    low_or_high_counter[low_or_high_window] += 1
+                else:
+                    raise ValueError("Problem with time window")
 
         self.high_counter_df = pd.DataFrame(list(high_counter.items()), columns=['window', 'count'])
         self.high_counter_df['probability'] = self.high_counter_df['count'] / len(historical_period)
@@ -122,32 +149,51 @@ class FxTimeIntervalScanner:
         self.low_counter_df = pd.DataFrame(list(low_counter.items()), columns=['window', 'count'])
         self.low_counter_df['probability'] = self.low_counter_df['count'] / len(historical_period)
 
+        self.low_or_high_counter_df = pd.DataFrame(list(low_or_high_counter.items()), columns=['window', 'count'])
+        self.low_or_high_counter_df['probability'] = self.low_or_high_counter_df['count'] / len(historical_period)
 
     def export_results(self):
         if not os.path.exists('output'):
             os.makedirs('output')
 
-        logging.debug(f"Exporting empirical distributions to csv")
+        logging.info(f"Exporting empirical distributions to csv")
         self.high_counter_df.to_csv(os.path.join('output', 'market_high_counter.csv'), index=False)
         self.low_counter_df.to_csv(os.path.join('output', 'market_low_counter.csv'), index=False)
+        self.low_or_high_counter_df.to_csv(os.path.join('output', 'market_low_or_high_counter.csv'), index=False)
 
         self.high_counter_df.sort_values(by='count', ascending=False, inplace=True)
         self.low_counter_df.sort_values(by='count', ascending=False, inplace=True)
+        self.low_or_high_counter_df.sort_values(by='count', ascending=False, inplace=True)
 
-        high_top3 = sorted(set(self.high_counter_df['count']), reverse=True)[:3]  # Sort in descending order and take the top 3
-        low_top3 = sorted(set(self.low_counter_df['count']), reverse=True)[:3]  # Sort in descending order and take the top 3
+        high_top3 = sorted(set(self.high_counter_df['count']), reverse=True)[:3]  
+        low_top3 = sorted(set(self.low_counter_df['count']), reverse=True)[:3]  
+        low_or_high_top3 = sorted(set(self.low_or_high_counter_df['count']), reverse=True)[:3]  
 
         high_top_3_rows = pd.DataFrame()
         for value in high_top3:
-            high_top_3_rows = pd.concat([high_top_3_rows, self.high_counter_df[self.high_counter_df['count'] == value]])
+            high_top_3_rows = pd.concat([
+                high_top_3_rows, 
+                self.high_counter_df[self.high_counter_df['count'] == value]])
             if high_top_3_rows.shape[0] >= 3:
                 break
 
         low_top_3_rows = pd.DataFrame()
         for value in low_top3:
-            low_top_3_rows = pd.concat([low_top_3_rows, self.low_counter_df[self.low_counter_df['count'] == value]])
+            low_top_3_rows = pd.concat([
+                low_top_3_rows, 
+                self.low_counter_df[self.low_counter_df['count'] == value]])
             if low_top_3_rows.shape[0] >= 3:
+                break
+
+        low_or_high_top3_rows = pd.DataFrame()
+        for value in low_or_high_top3:
+            low_or_high_top3_rows = pd.concat([
+                low_or_high_top3_rows, 
+                self.low_or_high_counter_df[self.low_or_high_counter_df['count'] == value]])
+            
+            if low_or_high_top3_rows.shape[0] >= 3:
                 break
 
         high_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_high.csv'), index=False)
         low_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_low.csv'), index=False)
+        low_or_high_top3_rows.to_csv(os.path.join('output', 'top_intervals_market_low_or_high.csv'), index=False)

@@ -22,12 +22,16 @@ if __name__ == '__main__':
                 cfg.tick_interval,
                 fx_rate,
                 cfg.low_high_interval,
-                cfg.historical_data_horizon)
+                cfg.historical_data_horizon,
+                cfg.historical_data_filename,
+                cfg.spread,
+                cfg.market_data_timezone)
 
             scanner.run_scanner()
             scanner.export_results()
 
         except Exception as err:
             logging.error(f'Error running {fx_rate}: {err}')
+            raise
 
     logging.info(f"Exiting run")

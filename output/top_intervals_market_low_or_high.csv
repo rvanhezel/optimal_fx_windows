@@ -1,0 +1,4 @@
+window,count,probability
+"(datetime.time(22, 30), datetime.time(0, 0))",184,0.7829787234042553
+"(datetime.time(22, 25), datetime.time(23, 55))",183,0.7787234042553192
+"(datetime.time(22, 20), datetime.time(23, 50))",177,0.7531914893617021

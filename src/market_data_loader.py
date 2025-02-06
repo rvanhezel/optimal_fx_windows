@@ -8,10 +8,11 @@ from src.utils import high_low_per_window, create_daily_date_schedule, create_ov
 from src.configuration import Configuration
 
 
-def load_market_data(fx_cross: str = None,
-                     tick_interval: str = None,
-                     first_day: pd.Timestamp = None,
-                     last_day: pd.Timestamp = None) -> pd.DataFrame:
+def load_market_data(fx_cross,
+                     tick_interval,
+                     first_day,
+                     last_day,
+                     historical_data_filename) -> pd.DataFrame:
     if False:    
         api_key = os.environ.get('TWELVE_DATA_KEY', 'WRONG-KEY')
         client_api = TDClient(apikey=api_key)
@@ -30,10 +31,9 @@ def load_market_data(fx_cross: str = None,
 
         fx_data_df.to_csv(os.path.join('data', f'fx_time_series.csv'))
     else:
-        data_file = os.path.join('data', f'full_fx_data.csv')
+        data_file = os.path.join('data', historical_data_filename)
         logging.info(f'Reading data from csv: {data_file}')
-        
-        # fx_data_df = pd.read_csv(os.path.join('data', f'fx_time_series.csv'), index_col='datetime')
+
         fx_data_df = pd.read_csv(data_file, index_col='datetime')
         fx_data_df.index = pd.to_datetime(fx_data_df.index)
 
