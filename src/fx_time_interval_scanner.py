@@ -2,7 +2,7 @@ import pandas as pd
 import logging
 import os
 from src.utils import high_low_per_window, create_daily_date_schedule, create_overlapping_time_grid, shift_date_by_period
-from src.market_data_loader import load_market_data
+from src.market_data_service import MarketDataService
 
 
 class FxTimeIntervalScanner:
@@ -13,6 +13,7 @@ class FxTimeIntervalScanner:
                  high_low_interval, 
                  historical_data_range,
                  historical_data_filename,
+                 market_data_service: MarketDataService,
                  spread=0.0,
                  timezone=None,
                  market_open_time: str = None):
@@ -22,11 +23,14 @@ class FxTimeIntervalScanner:
         self.historical_data_range = historical_data_range
         self.historical_data_filename = historical_data_filename
         self.spread = spread
+        self.market_data_service = market_data_service
         self.timezone = timezone
         self.market_open_time = market_open_time
 
         # self.ref_timezone = 'Asia/Bangkok'
-        self.ref_timezone = 'CET'
+        # self.ref_timezone = 'CET'
+        self.ref_timezone = 'ETC/UTC'
+
         self.high_counter_df = None
         self.low_counter_df = None
         self.low_or_high_counter_df = None
@@ -42,11 +46,11 @@ class FxTimeIntervalScanner:
         first_day = shift_date_by_period(self.historical_data_range, last_day, "-")
 
         # Load market data
-        fx_data_df = load_market_data(self.fx_rate,
-                                      self.tick_interval,
-                                      first_day,
-                                      last_day,
-                                      self.historical_data_filename)
+        fx_data_df = self.market_data_service.load_market_data(
+            self.fx_rate,
+            self.tick_interval,
+            first_day.to_pydatetime(),
+            last_day.to_pydatetime())
         
         # Adjust for timezone difference
         fx_data_df.index = fx_data_df.index.tz_localize(self.timezone)
@@ -129,11 +133,6 @@ class FxTimeIntervalScanner:
             found_low_high_windows = high_low_windows[low_and_high_query]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_high_windows)} windows containing the low or high")
 
-            # test = pd.Timestamp(2024, 4, 4, 0, 0, tz=self.ref_timezone)
-
-            # if current_date.date() == test.date():
-            #     a = 5
-
             hw_as_time = [(
                 window[0].to_pydatetime().time(),
                 window[1].to_pydatetime().time(),
@@ -176,14 +175,16 @@ class FxTimeIntervalScanner:
         self.low_or_high_counter_df = pd.DataFrame(list(low_or_high_counter.items()), columns=['window', 'count'])
         self.low_or_high_counter_df['probability'] = self.low_or_high_counter_df['count'] / len(historical_period)
 
-    def export_results(self):
+    def export_results(self, full_results: bool) -> None:
         if not os.path.exists('output'):
             os.makedirs('output')
 
+        prefix = self.fx_rate + '_'
         logging.info(f"Exporting empirical distributions to csv")
-        self.high_counter_df.to_csv(os.path.join('output', 'market_high_counter.csv'), index=False)
-        self.low_counter_df.to_csv(os.path.join('output', 'market_low_counter.csv'), index=False)
-        self.low_or_high_counter_df.to_csv(os.path.join('output', 'market_low_or_high_counter.csv'), index=False)
+        if full_results:
+            self.high_counter_df.to_csv(os.path.join('output', prefix + 'market_high_counter.csv'), index=False)
+            self.low_counter_df.to_csv(os.path.join('output', prefix + 'market_low_counter.csv'), index=False)
+            self.low_or_high_counter_df.to_csv(os.path.join('output', prefix + 'market_low_or_high_counter.csv'), index=False)
 
         self.high_counter_df.sort_values(by='count', ascending=False, inplace=True)
         self.low_counter_df.sort_values(by='count', ascending=False, inplace=True)
@@ -218,6 +219,8 @@ class FxTimeIntervalScanner:
             if low_or_high_top3_rows.shape[0] >= 3:
                 break
 
-        high_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_high.csv'), index=False)
-        low_top_3_rows.to_csv(os.path.join('output', 'top_intervals_market_low.csv'), index=False)
-        low_or_high_top3_rows.to_csv(os.path.join('output', 'top_intervals_market_low_or_high.csv'), index=False)
+        if full_results:
+            high_top_3_rows.to_csv(os.path.join('output', prefix + 'top_intervals_market_high.csv'), index=False)
+            low_top_3_rows.to_csv(os.path.join('output', prefix + 'top_intervals_market_low.csv'), index=False)
+        
+        low_or_high_top3_rows.to_csv(os.path.join('output', prefix + 'top_intervals_market_low_or_high.csv'), index=False)

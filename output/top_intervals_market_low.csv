@@ -1,4 +1,0 @@
-window,count,probability
-"(datetime.time(10, 10), datetime.time(11, 40))",93,0.384297520661157
-"(datetime.time(10, 0), datetime.time(11, 30))",91,0.3760330578512397
-"(datetime.time(9, 30), datetime.time(11, 0))",90,0.371900826446281
