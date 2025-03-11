@@ -35,6 +35,7 @@ if __name__ == '__main__':
                 market_data_service,
                 cfg.spread,
                 cfg.market_data_timezone,
+                cfg.ref_timezone,
                 cfg.market_open_time)
             scanner.run_scanner()
             scanner.export_results(cfg.full_results)

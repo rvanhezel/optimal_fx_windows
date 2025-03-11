@@ -15,7 +15,8 @@ class FxTimeIntervalScanner:
                  historical_data_filename,
                  market_data_service: MarketDataService,
                  spread=0.0,
-                 timezone=None,
+                 market_data_timezone=None,
+                 ref_timezone=None,
                  market_open_time: str = None):
         self.tick_interval = tick_interval
         self.fx_rate = fx_rate
@@ -24,13 +25,10 @@ class FxTimeIntervalScanner:
         self.historical_data_filename = historical_data_filename
         self.spread = spread
         self.market_data_service = market_data_service
-        self.timezone = timezone
+        self.timezone = market_data_timezone
         self.market_open_time = market_open_time
-
-        # self.ref_timezone = 'Asia/Bangkok'
-        # self.ref_timezone = 'CET'
-        self.ref_timezone = 'ETC/UTC'
-
+        self.ref_timezone = ref_timezone
+        
         self.high_counter_df = None
         self.low_counter_df = None
         self.low_or_high_counter_df = None
@@ -54,6 +52,8 @@ class FxTimeIntervalScanner:
         
         # Adjust for timezone difference
         fx_data_df.index = fx_data_df.index.tz_localize(self.timezone)
+        fx_data_df.to_csv(os.path.join('output', self.fx_rate + '_raw_time_series.csv'))
+
         fx_data_df.index = fx_data_df.index.tz_convert(self.ref_timezone)
 
 

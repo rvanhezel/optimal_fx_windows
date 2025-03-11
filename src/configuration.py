@@ -20,7 +20,7 @@ class Configuration:
 
         # Market data
         self.use_api = self.config.getboolean('MarketData', 'use_api')
-        self.historical_data_filename = self.config.get('MarketData', 'historical_data_filename', fallback='fx_time_series.csv')
+        self.historical_data_filename = self.config.get('MarketData', 'ref_timezone', fallback='fx_time_series.csv')
         self.market_data_timezone = self.config.get('MarketData', 'market_data_timezone')
         self.historical_data_horizon = Period(self.config.get('MarketData', 'historical_data_horizon'))
         self.tick_interval = Period(self.config.get('MarketData', 'tick_interval'))
@@ -28,6 +28,7 @@ class Configuration:
         self.market_open_time = self.config.get('MarketData', 'market_open_time')
 
         # Results
+        self.ref_timezone = self.config.get('Results', 'ref_timezone')
         self.full_results = self.config.getboolean('Results', 'full_results')
 
     def _configure_log(self, log_level: str):
