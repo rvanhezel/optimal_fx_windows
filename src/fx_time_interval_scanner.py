@@ -56,7 +56,6 @@ class FxTimeIntervalScanner:
 
         fx_data_df.index = fx_data_df.index.tz_convert(self.ref_timezone)
 
-
         # Check first and last date from loaded fx data. 
         # Shift by one day as first date is never full with TwelveData
         first_day = fx_data_df.index.min() + pd.Timedelta(days=1)
@@ -73,7 +72,9 @@ class FxTimeIntervalScanner:
             last_day.day, 
             int(self.market_open_time[:2]), 
             int(self.market_open_time[2:]),
-            tz=self.ref_timezone)
+            tz=self.timezone)
+        
+        start = start.tz_convert(self.ref_timezone)
         
         overlapping_intra_day_grid = create_overlapping_time_grid(
             start, 
@@ -88,8 +89,10 @@ class FxTimeIntervalScanner:
         low_counter = {k: 0 for k in overlapping_intra_day_grid}
         low_or_high_counter = {k: 0 for k in overlapping_intra_day_grid}
         
-
+        opening_window_metrics = []
         for current_date in historical_period:
+            current_opening_window_metrics = []
+
             logging.info(f'Computing {self.fx_rate} high and low windows for: {current_date.strftime('%Y-%m-%d')}')
 
             date_open = pd.Timestamp(current_date.year, 
@@ -97,10 +100,13 @@ class FxTimeIntervalScanner:
                                      current_date.day, 
                                      int(self.market_open_time[:2]), 
                                      int(self.market_open_time[2:]), 
-                                     tz=self.ref_timezone)
+                                     tz=self.timezone)
+            date_open = date_open.tz_convert(self.ref_timezone)
             date_close = date_open + pd.Timedelta(days=1)
             logging.info(f'Trading day: {date_open} to {date_close} {self.ref_timezone}')
 
+            daily_opening_window = (date_open, shift_date_by_period(self.high_low_interval, date_open))
+            current_opening_window_metrics.append(date_open.date())
 
             # Set current date time windows
             windows = create_overlapping_time_grid(
@@ -129,9 +135,17 @@ class FxTimeIntervalScanner:
             found_low_windows = high_low_windows[high_low_windows['low'] <= daily_low]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_windows)} windows containing the low")
 
+            current_opening_window_metrics.append(daily_high)
+            current_opening_window_metrics.append(daily_low)
+
             low_and_high_query = (high_low_windows['high'] >= daily_high) | (high_low_windows['low'] <= daily_low)
             found_low_high_windows = high_low_windows[low_and_high_query]['window'].to_list()
             logging.debug(f"For {current_date.strftime('%Y-%m-%d')}, found {len(found_low_high_windows)} windows containing the low or high")
+
+            if daily_opening_window in found_low_high_windows:
+                current_opening_window_metrics.append(True) 
+            else:
+                current_opening_window_metrics.append(False)    
 
             hw_as_time = [(
                 window[0].to_pydatetime().time(),
@@ -165,6 +179,8 @@ class FxTimeIntervalScanner:
                     low_or_high_counter[low_or_high_window] += 1
                 else:
                     raise ValueError("Problem with time window")
+                
+            opening_window_metrics.append(current_opening_window_metrics)
 
         self.high_counter_df = pd.DataFrame(list(high_counter.items()), columns=['window', 'count'])
         self.high_counter_df['probability'] = self.high_counter_df['count'] / len(historical_period)
@@ -174,6 +190,9 @@ class FxTimeIntervalScanner:
 
         self.low_or_high_counter_df = pd.DataFrame(list(low_or_high_counter.items()), columns=['window', 'count'])
         self.low_or_high_counter_df['probability'] = self.low_or_high_counter_df['count'] / len(historical_period)
+
+        self.opening_window_metrics = pd.DataFrame(opening_window_metrics, 
+                                                   columns=['date', 'daily_high', 'daily_low', 'opening_window_contains_high_or_low'])
 
     def export_results(self, full_results: bool) -> None:
         if not os.path.exists('output'):
@@ -224,3 +243,6 @@ class FxTimeIntervalScanner:
             low_top_3_rows.to_csv(os.path.join('output', prefix + 'top_intervals_market_low.csv'), index=False)
         
         low_or_high_top3_rows.to_csv(os.path.join('output', prefix + 'top_intervals_market_low_or_high.csv'), index=False)
+
+        # opening window metrics
+        self.opening_window_metrics.to_csv(os.path.join('output', prefix + 'opening_window_metrics.csv'), index=False)

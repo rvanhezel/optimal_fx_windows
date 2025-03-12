@@ -1,0 +1,1322 @@
+12/03/2025 14:10:38.859 - INFO - Logger initialized
+12/03/2025 14:10:38.878 - DEBUG - Successfully logged into MT5 account: 5033797116
+12/03/2025 14:10:38.878 - INFO - Successfully initialized MT5API.
+12/03/2025 14:10:38.878 - INFO - Starting run for EURUSD
+12/03/2025 14:10:38.878 - INFO - Configured run with: 5min tick interval,  EURUSD FX rate, 90min horizon and 1Y historical data
+12/03/2025 14:10:38.929 - INFO - Fetching market data from MT5 API for EURUSD from 2024-03-11 20:10:38.924379+07:00 to 2025-03-11 20:10:38.924379+07:00.
+12/03/2025 14:10:38.969 - INFO - Market data successfully retrieved from MT5 API.
+12/03/2025 14:10:39.582 - INFO - Actual date range: 2024-03-12 to 2025-03-12
+12/03/2025 14:10:39.590 - INFO - Computing EURUSD high and low windows for: 2024-03-12
+12/03/2025 14:10:39.598 - INFO - Trading day: 2024-03-12 16:00:00+07:00 to 2024-03-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:39.676 - DEBUG - For 2024-03-12 found 30 windows containing the high
+12/03/2025 14:10:39.676 - DEBUG - For 2024-03-12, found 39 windows containing the low
+12/03/2025 14:10:39.676 - DEBUG - For 2024-03-12, found 47 windows containing the low or high
+12/03/2025 14:10:39.676 - INFO - Computing EURUSD high and low windows for: 2024-03-13
+12/03/2025 14:10:39.676 - INFO - Trading day: 2024-03-13 16:00:00+07:00 to 2024-03-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:39.758 - DEBUG - For 2024-03-13 found 27 windows containing the high
+12/03/2025 14:10:39.758 - DEBUG - For 2024-03-13, found 37 windows containing the low
+12/03/2025 14:10:39.758 - DEBUG - For 2024-03-13, found 64 windows containing the low or high
+12/03/2025 14:10:39.758 - INFO - Computing EURUSD high and low windows for: 2024-03-14
+12/03/2025 14:10:39.773 - INFO - Trading day: 2024-03-14 16:00:00+07:00 to 2024-03-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:39.826 - DEBUG - For 2024-03-14 found 70 windows containing the high
+12/03/2025 14:10:39.841 - DEBUG - For 2024-03-14, found 80 windows containing the low
+12/03/2025 14:10:39.841 - DEBUG - For 2024-03-14, found 150 windows containing the low or high
+12/03/2025 14:10:39.841 - INFO - Computing EURUSD high and low windows for: 2024-03-15
+12/03/2025 14:10:39.841 - INFO - Trading day: 2024-03-15 16:00:00+07:00 to 2024-03-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:39.917 - DEBUG - For 2024-03-15 found 60 windows containing the high
+12/03/2025 14:10:39.918 - DEBUG - For 2024-03-15, found 45 windows containing the low
+12/03/2025 14:10:39.918 - DEBUG - For 2024-03-15, found 96 windows containing the low or high
+12/03/2025 14:10:39.919 - INFO - Computing EURUSD high and low windows for: 2024-03-18
+12/03/2025 14:10:39.919 - INFO - Trading day: 2024-03-18 16:00:00+07:00 to 2024-03-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.010 - DEBUG - For 2024-03-18 found 39 windows containing the high
+12/03/2025 14:10:40.012 - DEBUG - For 2024-03-18, found 61 windows containing the low
+12/03/2025 14:10:40.013 - DEBUG - For 2024-03-18, found 100 windows containing the low or high
+12/03/2025 14:10:40.014 - INFO - Computing EURUSD high and low windows for: 2024-03-19
+12/03/2025 14:10:40.015 - INFO - Trading day: 2024-03-19 16:00:00+07:00 to 2024-03-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.074 - DEBUG - For 2024-03-19 found 123 windows containing the high
+12/03/2025 14:10:40.074 - DEBUG - For 2024-03-19, found 26 windows containing the low
+12/03/2025 14:10:40.074 - DEBUG - For 2024-03-19, found 149 windows containing the low or high
+12/03/2025 14:10:40.091 - INFO - Computing EURUSD high and low windows for: 2024-03-20
+12/03/2025 14:10:40.091 - INFO - Trading day: 2024-03-20 16:00:00+07:00 to 2024-03-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.168 - DEBUG - For 2024-03-20 found 93 windows containing the high
+12/03/2025 14:10:40.168 - DEBUG - For 2024-03-20, found 75 windows containing the low
+12/03/2025 14:10:40.168 - DEBUG - For 2024-03-20, found 168 windows containing the low or high
+12/03/2025 14:10:40.168 - INFO - Computing EURUSD high and low windows for: 2024-03-21
+12/03/2025 14:10:40.168 - INFO - Trading day: 2024-03-21 16:00:00+07:00 to 2024-03-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.240 - DEBUG - For 2024-03-21 found 7 windows containing the high
+12/03/2025 14:10:40.240 - DEBUG - For 2024-03-21, found 28 windows containing the low
+12/03/2025 14:10:40.240 - DEBUG - For 2024-03-21, found 35 windows containing the low or high
+12/03/2025 14:10:40.240 - INFO - Computing EURUSD high and low windows for: 2024-03-22
+12/03/2025 14:10:40.240 - INFO - Trading day: 2024-03-22 16:00:00+07:00 to 2024-03-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.313 - DEBUG - For 2024-03-22 found 49 windows containing the high
+12/03/2025 14:10:40.313 - DEBUG - For 2024-03-22, found 68 windows containing the low
+12/03/2025 14:10:40.313 - DEBUG - For 2024-03-22, found 117 windows containing the low or high
+12/03/2025 14:10:40.313 - INFO - Computing EURUSD high and low windows for: 2024-03-25
+12/03/2025 14:10:40.313 - INFO - Trading day: 2024-03-25 16:00:00+07:00 to 2024-03-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.389 - DEBUG - For 2024-03-25 found 16 windows containing the high
+12/03/2025 14:10:40.394 - DEBUG - For 2024-03-25, found 25 windows containing the low
+12/03/2025 14:10:40.394 - DEBUG - For 2024-03-25, found 41 windows containing the low or high
+12/03/2025 14:10:40.395 - INFO - Computing EURUSD high and low windows for: 2024-03-26
+12/03/2025 14:10:40.396 - INFO - Trading day: 2024-03-26 16:00:00+07:00 to 2024-03-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.463 - DEBUG - For 2024-03-26 found 44 windows containing the high
+12/03/2025 14:10:40.463 - DEBUG - For 2024-03-26, found 87 windows containing the low
+12/03/2025 14:10:40.463 - DEBUG - For 2024-03-26, found 131 windows containing the low or high
+12/03/2025 14:10:40.474 - INFO - Computing EURUSD high and low windows for: 2024-03-27
+12/03/2025 14:10:40.476 - INFO - Trading day: 2024-03-27 16:00:00+07:00 to 2024-03-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.542 - DEBUG - For 2024-03-27 found 49 windows containing the high
+12/03/2025 14:10:40.542 - DEBUG - For 2024-03-27, found 67 windows containing the low
+12/03/2025 14:10:40.542 - DEBUG - For 2024-03-27, found 116 windows containing the low or high
+12/03/2025 14:10:40.542 - INFO - Computing EURUSD high and low windows for: 2024-03-28
+12/03/2025 14:10:40.542 - INFO - Trading day: 2024-03-28 16:00:00+07:00 to 2024-03-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.611 - DEBUG - For 2024-03-28 found 34 windows containing the high
+12/03/2025 14:10:40.611 - DEBUG - For 2024-03-28, found 94 windows containing the low
+12/03/2025 14:10:40.623 - DEBUG - For 2024-03-28, found 128 windows containing the low or high
+12/03/2025 14:10:40.625 - INFO - Computing EURUSD high and low windows for: 2024-03-29
+12/03/2025 14:10:40.625 - INFO - Trading day: 2024-03-29 16:00:00+07:00 to 2024-03-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.692 - DEBUG - For 2024-03-29 found 28 windows containing the high
+12/03/2025 14:10:40.692 - DEBUG - For 2024-03-29, found 29 windows containing the low
+12/03/2025 14:10:40.692 - DEBUG - For 2024-03-29, found 57 windows containing the low or high
+12/03/2025 14:10:40.692 - INFO - Computing EURUSD high and low windows for: 2024-04-01
+12/03/2025 14:10:40.692 - INFO - Trading day: 2024-04-01 16:00:00+07:00 to 2024-04-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.786 - DEBUG - For 2024-04-01 found 68 windows containing the high
+12/03/2025 14:10:40.786 - DEBUG - For 2024-04-01, found 58 windows containing the low
+12/03/2025 14:10:40.790 - DEBUG - For 2024-04-01, found 126 windows containing the low or high
+12/03/2025 14:10:40.791 - INFO - Computing EURUSD high and low windows for: 2024-04-02
+12/03/2025 14:10:40.792 - INFO - Trading day: 2024-04-02 16:00:00+07:00 to 2024-04-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.860 - DEBUG - For 2024-04-02 found 75 windows containing the high
+12/03/2025 14:10:40.860 - DEBUG - For 2024-04-02, found 34 windows containing the low
+12/03/2025 14:10:40.860 - DEBUG - For 2024-04-02, found 109 windows containing the low or high
+12/03/2025 14:10:40.860 - INFO - Computing EURUSD high and low windows for: 2024-04-03
+12/03/2025 14:10:40.860 - INFO - Trading day: 2024-04-03 16:00:00+07:00 to 2024-04-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:40.964 - DEBUG - For 2024-04-03 found 63 windows containing the high
+12/03/2025 14:10:40.964 - DEBUG - For 2024-04-03, found 53 windows containing the low
+12/03/2025 14:10:40.964 - DEBUG - For 2024-04-03, found 116 windows containing the low or high
+12/03/2025 14:10:40.964 - INFO - Computing EURUSD high and low windows for: 2024-04-04
+12/03/2025 14:10:40.964 - INFO - Trading day: 2024-04-04 16:00:00+07:00 to 2024-04-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.057 - DEBUG - For 2024-04-04 found 37 windows containing the high
+12/03/2025 14:10:41.057 - DEBUG - For 2024-04-04, found 70 windows containing the low
+12/03/2025 14:10:41.057 - DEBUG - For 2024-04-04, found 107 windows containing the low or high
+12/03/2025 14:10:41.057 - INFO - Computing EURUSD high and low windows for: 2024-04-05
+12/03/2025 14:10:41.057 - INFO - Trading day: 2024-04-05 16:00:00+07:00 to 2024-04-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.143 - DEBUG - For 2024-04-05 found 69 windows containing the high
+12/03/2025 14:10:41.143 - DEBUG - For 2024-04-05, found 27 windows containing the low
+12/03/2025 14:10:41.143 - DEBUG - For 2024-04-05, found 84 windows containing the low or high
+12/03/2025 14:10:41.143 - INFO - Computing EURUSD high and low windows for: 2024-04-08
+12/03/2025 14:10:41.143 - INFO - Trading day: 2024-04-08 16:00:00+07:00 to 2024-04-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.309 - DEBUG - For 2024-04-08 found 165 windows containing the high
+12/03/2025 14:10:41.309 - DEBUG - For 2024-04-08, found 63 windows containing the low
+12/03/2025 14:10:41.309 - DEBUG - For 2024-04-08, found 228 windows containing the low or high
+12/03/2025 14:10:41.309 - INFO - Computing EURUSD high and low windows for: 2024-04-09
+12/03/2025 14:10:41.309 - INFO - Trading day: 2024-04-09 16:00:00+07:00 to 2024-04-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.392 - DEBUG - For 2024-04-09 found 37 windows containing the high
+12/03/2025 14:10:41.392 - DEBUG - For 2024-04-09, found 175 windows containing the low
+12/03/2025 14:10:41.392 - DEBUG - For 2024-04-09, found 204 windows containing the low or high
+12/03/2025 14:10:41.392 - INFO - Computing EURUSD high and low windows for: 2024-04-10
+12/03/2025 14:10:41.392 - INFO - Trading day: 2024-04-10 16:00:00+07:00 to 2024-04-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.489 - DEBUG - For 2024-04-10 found 60 windows containing the high
+12/03/2025 14:10:41.491 - DEBUG - For 2024-04-10, found 34 windows containing the low
+12/03/2025 14:10:41.492 - DEBUG - For 2024-04-10, found 94 windows containing the low or high
+12/03/2025 14:10:41.492 - INFO - Computing EURUSD high and low windows for: 2024-04-11
+12/03/2025 14:10:41.493 - INFO - Trading day: 2024-04-11 16:00:00+07:00 to 2024-04-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.576 - DEBUG - For 2024-04-11 found 20 windows containing the high
+12/03/2025 14:10:41.577 - DEBUG - For 2024-04-11, found 30 windows containing the low
+12/03/2025 14:10:41.577 - DEBUG - For 2024-04-11, found 44 windows containing the low or high
+12/03/2025 14:10:41.577 - INFO - Computing EURUSD high and low windows for: 2024-04-12
+12/03/2025 14:10:41.577 - INFO - Trading day: 2024-04-12 16:00:00+07:00 to 2024-04-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.671 - DEBUG - For 2024-04-12 found 5 windows containing the high
+12/03/2025 14:10:41.676 - DEBUG - For 2024-04-12, found 26 windows containing the low
+12/03/2025 14:10:41.678 - DEBUG - For 2024-04-12, found 31 windows containing the low or high
+12/03/2025 14:10:41.679 - INFO - Computing EURUSD high and low windows for: 2024-04-15
+12/03/2025 14:10:41.681 - INFO - Trading day: 2024-04-15 16:00:00+07:00 to 2024-04-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.790 - DEBUG - For 2024-04-15 found 84 windows containing the high
+12/03/2025 14:10:41.790 - DEBUG - For 2024-04-15, found 58 windows containing the low
+12/03/2025 14:10:41.790 - DEBUG - For 2024-04-15, found 142 windows containing the low or high
+12/03/2025 14:10:41.790 - INFO - Computing EURUSD high and low windows for: 2024-04-16
+12/03/2025 14:10:41.790 - INFO - Trading day: 2024-04-16 16:00:00+07:00 to 2024-04-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.874 - DEBUG - For 2024-04-16 found 21 windows containing the high
+12/03/2025 14:10:41.875 - DEBUG - For 2024-04-16, found 28 windows containing the low
+12/03/2025 14:10:41.875 - DEBUG - For 2024-04-16, found 49 windows containing the low or high
+12/03/2025 14:10:41.875 - INFO - Computing EURUSD high and low windows for: 2024-04-17
+12/03/2025 14:10:41.875 - INFO - Trading day: 2024-04-17 16:00:00+07:00 to 2024-04-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:41.957 - DEBUG - For 2024-04-17 found 59 windows containing the high
+12/03/2025 14:10:41.958 - DEBUG - For 2024-04-17, found 2 windows containing the low
+12/03/2025 14:10:41.959 - DEBUG - For 2024-04-17, found 61 windows containing the low or high
+12/03/2025 14:10:41.959 - INFO - Computing EURUSD high and low windows for: 2024-04-18
+12/03/2025 14:10:41.960 - INFO - Trading day: 2024-04-18 16:00:00+07:00 to 2024-04-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.023 - DEBUG - For 2024-04-18 found 23 windows containing the high
+12/03/2025 14:10:42.023 - DEBUG - For 2024-04-18, found 35 windows containing the low
+12/03/2025 14:10:42.023 - DEBUG - For 2024-04-18, found 58 windows containing the low or high
+12/03/2025 14:10:42.023 - INFO - Computing EURUSD high and low windows for: 2024-04-19
+12/03/2025 14:10:42.023 - INFO - Trading day: 2024-04-19 16:00:00+07:00 to 2024-04-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.107 - DEBUG - For 2024-04-19 found 46 windows containing the high
+12/03/2025 14:10:42.107 - DEBUG - For 2024-04-19, found 6 windows containing the low
+12/03/2025 14:10:42.123 - DEBUG - For 2024-04-19, found 52 windows containing the low or high
+12/03/2025 14:10:42.125 - INFO - Computing EURUSD high and low windows for: 2024-04-22
+12/03/2025 14:10:42.125 - INFO - Trading day: 2024-04-22 16:00:00+07:00 to 2024-04-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.196 - DEBUG - For 2024-04-22 found 16 windows containing the high
+12/03/2025 14:10:42.197 - DEBUG - For 2024-04-22, found 22 windows containing the low
+12/03/2025 14:10:42.198 - DEBUG - For 2024-04-22, found 38 windows containing the low or high
+12/03/2025 14:10:42.199 - INFO - Computing EURUSD high and low windows for: 2024-04-23
+12/03/2025 14:10:42.199 - INFO - Trading day: 2024-04-23 16:00:00+07:00 to 2024-04-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.257 - DEBUG - For 2024-04-23 found 76 windows containing the high
+12/03/2025 14:10:42.273 - DEBUG - For 2024-04-23, found 10 windows containing the low
+12/03/2025 14:10:42.275 - DEBUG - For 2024-04-23, found 86 windows containing the low or high
+12/03/2025 14:10:42.276 - INFO - Computing EURUSD high and low windows for: 2024-04-24
+12/03/2025 14:10:42.277 - INFO - Trading day: 2024-04-24 16:00:00+07:00 to 2024-04-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.353 - DEBUG - For 2024-04-24 found 54 windows containing the high
+12/03/2025 14:10:42.354 - DEBUG - For 2024-04-24, found 72 windows containing the low
+12/03/2025 14:10:42.355 - DEBUG - For 2024-04-24, found 126 windows containing the low or high
+12/03/2025 14:10:42.356 - INFO - Computing EURUSD high and low windows for: 2024-04-25
+12/03/2025 14:10:42.356 - INFO - Trading day: 2024-04-25 16:00:00+07:00 to 2024-04-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.425 - DEBUG - For 2024-04-25 found 46 windows containing the high
+12/03/2025 14:10:42.425 - DEBUG - For 2024-04-25, found 23 windows containing the low
+12/03/2025 14:10:42.425 - DEBUG - For 2024-04-25, found 58 windows containing the low or high
+12/03/2025 14:10:42.425 - INFO - Computing EURUSD high and low windows for: 2024-04-26
+12/03/2025 14:10:42.425 - INFO - Trading day: 2024-04-26 16:00:00+07:00 to 2024-04-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.501 - DEBUG - For 2024-04-26 found 22 windows containing the high
+12/03/2025 14:10:42.503 - DEBUG - For 2024-04-26, found 26 windows containing the low
+12/03/2025 14:10:42.503 - DEBUG - For 2024-04-26, found 48 windows containing the low or high
+12/03/2025 14:10:42.503 - INFO - Computing EURUSD high and low windows for: 2024-04-29
+12/03/2025 14:10:42.503 - INFO - Trading day: 2024-04-29 16:00:00+07:00 to 2024-04-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.574 - DEBUG - For 2024-04-29 found 94 windows containing the high
+12/03/2025 14:10:42.574 - DEBUG - For 2024-04-29, found 24 windows containing the low
+12/03/2025 14:10:42.574 - DEBUG - For 2024-04-29, found 118 windows containing the low or high
+12/03/2025 14:10:42.574 - INFO - Computing EURUSD high and low windows for: 2024-04-30
+12/03/2025 14:10:42.574 - INFO - Trading day: 2024-04-30 16:00:00+07:00 to 2024-05-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.655 - DEBUG - For 2024-04-30 found 33 windows containing the high
+12/03/2025 14:10:42.655 - DEBUG - For 2024-04-30, found 69 windows containing the low
+12/03/2025 14:10:42.655 - DEBUG - For 2024-04-30, found 102 windows containing the low or high
+12/03/2025 14:10:42.665 - INFO - Computing EURUSD high and low windows for: 2024-05-01
+12/03/2025 14:10:42.665 - INFO - Trading day: 2024-05-01 16:00:00+07:00 to 2024-05-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.752 - DEBUG - For 2024-05-01 found 22 windows containing the high
+12/03/2025 14:10:42.752 - DEBUG - For 2024-05-01, found 13 windows containing the low
+12/03/2025 14:10:42.752 - DEBUG - For 2024-05-01, found 35 windows containing the low or high
+12/03/2025 14:10:42.752 - INFO - Computing EURUSD high and low windows for: 2024-05-02
+12/03/2025 14:10:42.752 - INFO - Trading day: 2024-05-02 16:00:00+07:00 to 2024-05-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.825 - DEBUG - For 2024-05-02 found 57 windows containing the high
+12/03/2025 14:10:42.825 - DEBUG - For 2024-05-02, found 23 windows containing the low
+12/03/2025 14:10:42.825 - DEBUG - For 2024-05-02, found 80 windows containing the low or high
+12/03/2025 14:10:42.825 - INFO - Computing EURUSD high and low windows for: 2024-05-03
+12/03/2025 14:10:42.825 - INFO - Trading day: 2024-05-03 16:00:00+07:00 to 2024-05-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.908 - DEBUG - For 2024-05-03 found 21 windows containing the high
+12/03/2025 14:10:42.908 - DEBUG - For 2024-05-03, found 19 windows containing the low
+12/03/2025 14:10:42.908 - DEBUG - For 2024-05-03, found 40 windows containing the low or high
+12/03/2025 14:10:42.908 - INFO - Computing EURUSD high and low windows for: 2024-05-06
+12/03/2025 14:10:42.908 - INFO - Trading day: 2024-05-06 16:00:00+07:00 to 2024-05-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:42.975 - DEBUG - For 2024-05-06 found 41 windows containing the high
+12/03/2025 14:10:42.975 - DEBUG - For 2024-05-06, found 48 windows containing the low
+12/03/2025 14:10:42.975 - DEBUG - For 2024-05-06, found 89 windows containing the low or high
+12/03/2025 14:10:42.975 - INFO - Computing EURUSD high and low windows for: 2024-05-07
+12/03/2025 14:10:42.975 - INFO - Trading day: 2024-05-07 16:00:00+07:00 to 2024-05-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.042 - DEBUG - For 2024-05-07 found 39 windows containing the high
+12/03/2025 14:10:43.042 - DEBUG - For 2024-05-07, found 57 windows containing the low
+12/03/2025 14:10:43.042 - DEBUG - For 2024-05-07, found 96 windows containing the low or high
+12/03/2025 14:10:43.042 - INFO - Computing EURUSD high and low windows for: 2024-05-08
+12/03/2025 14:10:43.042 - INFO - Trading day: 2024-05-08 16:00:00+07:00 to 2024-05-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.127 - DEBUG - For 2024-05-08 found 83 windows containing the high
+12/03/2025 14:10:43.127 - DEBUG - For 2024-05-08, found 67 windows containing the low
+12/03/2025 14:10:43.127 - DEBUG - For 2024-05-08, found 142 windows containing the low or high
+12/03/2025 14:10:43.141 - INFO - Computing EURUSD high and low windows for: 2024-05-09
+12/03/2025 14:10:43.141 - INFO - Trading day: 2024-05-09 16:00:00+07:00 to 2024-05-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.209 - DEBUG - For 2024-05-09 found 119 windows containing the high
+12/03/2025 14:10:43.209 - DEBUG - For 2024-05-09, found 62 windows containing the low
+12/03/2025 14:10:43.209 - DEBUG - For 2024-05-09, found 181 windows containing the low or high
+12/03/2025 14:10:43.209 - INFO - Computing EURUSD high and low windows for: 2024-05-10
+12/03/2025 14:10:43.209 - INFO - Trading day: 2024-05-10 16:00:00+07:00 to 2024-05-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.279 - DEBUG - For 2024-05-10 found 59 windows containing the high
+12/03/2025 14:10:43.279 - DEBUG - For 2024-05-10, found 28 windows containing the low
+12/03/2025 14:10:43.279 - DEBUG - For 2024-05-10, found 72 windows containing the low or high
+12/03/2025 14:10:43.279 - INFO - Computing EURUSD high and low windows for: 2024-05-13
+12/03/2025 14:10:43.279 - INFO - Trading day: 2024-05-13 16:00:00+07:00 to 2024-05-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.342 - DEBUG - For 2024-05-13 found 40 windows containing the high
+12/03/2025 14:10:43.356 - DEBUG - For 2024-05-13, found 26 windows containing the low
+12/03/2025 14:10:43.357 - DEBUG - For 2024-05-13, found 66 windows containing the low or high
+12/03/2025 14:10:43.357 - INFO - Computing EURUSD high and low windows for: 2024-05-14
+12/03/2025 14:10:43.357 - INFO - Trading day: 2024-05-14 16:00:00+07:00 to 2024-05-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.425 - DEBUG - For 2024-05-14 found 88 windows containing the high
+12/03/2025 14:10:43.425 - DEBUG - For 2024-05-14, found 19 windows containing the low
+12/03/2025 14:10:43.425 - DEBUG - For 2024-05-14, found 107 windows containing the low or high
+12/03/2025 14:10:43.425 - INFO - Computing EURUSD high and low windows for: 2024-05-15
+12/03/2025 14:10:43.425 - INFO - Trading day: 2024-05-15 16:00:00+07:00 to 2024-05-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.512 - DEBUG - For 2024-05-15 found 46 windows containing the high
+12/03/2025 14:10:43.512 - DEBUG - For 2024-05-15, found 72 windows containing the low
+12/03/2025 14:10:43.512 - DEBUG - For 2024-05-15, found 118 windows containing the low or high
+12/03/2025 14:10:43.512 - INFO - Computing EURUSD high and low windows for: 2024-05-16
+12/03/2025 14:10:43.512 - INFO - Trading day: 2024-05-16 16:00:00+07:00 to 2024-05-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.590 - DEBUG - For 2024-05-16 found 19 windows containing the high
+12/03/2025 14:10:43.590 - DEBUG - For 2024-05-16, found 108 windows containing the low
+12/03/2025 14:10:43.590 - DEBUG - For 2024-05-16, found 127 windows containing the low or high
+12/03/2025 14:10:43.590 - INFO - Computing EURUSD high and low windows for: 2024-05-17
+12/03/2025 14:10:43.590 - INFO - Trading day: 2024-05-17 16:00:00+07:00 to 2024-05-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.671 - DEBUG - For 2024-05-17 found 79 windows containing the high
+12/03/2025 14:10:43.675 - DEBUG - For 2024-05-17, found 44 windows containing the low
+12/03/2025 14:10:43.677 - DEBUG - For 2024-05-17, found 123 windows containing the low or high
+12/03/2025 14:10:43.680 - INFO - Computing EURUSD high and low windows for: 2024-05-20
+12/03/2025 14:10:43.681 - INFO - Trading day: 2024-05-20 16:00:00+07:00 to 2024-05-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.767 - DEBUG - For 2024-05-20 found 13 windows containing the high
+12/03/2025 14:10:43.768 - DEBUG - For 2024-05-20, found 107 windows containing the low
+12/03/2025 14:10:43.768 - DEBUG - For 2024-05-20, found 120 windows containing the low or high
+12/03/2025 14:10:43.769 - INFO - Computing EURUSD high and low windows for: 2024-05-21
+12/03/2025 14:10:43.770 - INFO - Trading day: 2024-05-21 16:00:00+07:00 to 2024-05-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.840 - DEBUG - For 2024-05-21 found 54 windows containing the high
+12/03/2025 14:10:43.840 - DEBUG - For 2024-05-21, found 50 windows containing the low
+12/03/2025 14:10:43.840 - DEBUG - For 2024-05-21, found 97 windows containing the low or high
+12/03/2025 14:10:43.840 - INFO - Computing EURUSD high and low windows for: 2024-05-22
+12/03/2025 14:10:43.849 - INFO - Trading day: 2024-05-22 16:00:00+07:00 to 2024-05-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:43.929 - DEBUG - For 2024-05-22 found 22 windows containing the high
+12/03/2025 14:10:43.929 - DEBUG - For 2024-05-22, found 102 windows containing the low
+12/03/2025 14:10:43.930 - DEBUG - For 2024-05-22, found 124 windows containing the low or high
+12/03/2025 14:10:43.931 - INFO - Computing EURUSD high and low windows for: 2024-05-23
+12/03/2025 14:10:43.931 - INFO - Trading day: 2024-05-23 16:00:00+07:00 to 2024-05-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.006 - DEBUG - For 2024-05-23 found 27 windows containing the high
+12/03/2025 14:10:44.007 - DEBUG - For 2024-05-23, found 133 windows containing the low
+12/03/2025 14:10:44.007 - DEBUG - For 2024-05-23, found 160 windows containing the low or high
+12/03/2025 14:10:44.007 - INFO - Computing EURUSD high and low windows for: 2024-05-24
+12/03/2025 14:10:44.007 - INFO - Trading day: 2024-05-24 16:00:00+07:00 to 2024-05-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.074 - DEBUG - For 2024-05-24 found 83 windows containing the high
+12/03/2025 14:10:44.074 - DEBUG - For 2024-05-24, found 13 windows containing the low
+12/03/2025 14:10:44.074 - DEBUG - For 2024-05-24, found 96 windows containing the low or high
+12/03/2025 14:10:44.074 - INFO - Computing EURUSD high and low windows for: 2024-05-27
+12/03/2025 14:10:44.074 - INFO - Trading day: 2024-05-27 16:00:00+07:00 to 2024-05-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.162 - DEBUG - For 2024-05-27 found 45 windows containing the high
+12/03/2025 14:10:44.164 - DEBUG - For 2024-05-27, found 61 windows containing the low
+12/03/2025 14:10:44.165 - DEBUG - For 2024-05-27, found 106 windows containing the low or high
+12/03/2025 14:10:44.165 - INFO - Computing EURUSD high and low windows for: 2024-05-28
+12/03/2025 14:10:44.166 - INFO - Trading day: 2024-05-28 16:00:00+07:00 to 2024-05-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.244 - DEBUG - For 2024-05-28 found 31 windows containing the high
+12/03/2025 14:10:44.245 - DEBUG - For 2024-05-28, found 69 windows containing the low
+12/03/2025 14:10:44.247 - DEBUG - For 2024-05-28, found 100 windows containing the low or high
+12/03/2025 14:10:44.248 - INFO - Computing EURUSD high and low windows for: 2024-05-29
+12/03/2025 14:10:44.249 - INFO - Trading day: 2024-05-29 16:00:00+07:00 to 2024-05-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.325 - DEBUG - For 2024-05-29 found 71 windows containing the high
+12/03/2025 14:10:44.326 - DEBUG - For 2024-05-29, found 18 windows containing the low
+12/03/2025 14:10:44.327 - DEBUG - For 2024-05-29, found 89 windows containing the low or high
+12/03/2025 14:10:44.327 - INFO - Computing EURUSD high and low windows for: 2024-05-30
+12/03/2025 14:10:44.328 - INFO - Trading day: 2024-05-30 16:00:00+07:00 to 2024-05-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.392 - DEBUG - For 2024-05-30 found 60 windows containing the high
+12/03/2025 14:10:44.392 - DEBUG - For 2024-05-30, found 14 windows containing the low
+12/03/2025 14:10:44.392 - DEBUG - For 2024-05-30, found 74 windows containing the low or high
+12/03/2025 14:10:44.392 - INFO - Computing EURUSD high and low windows for: 2024-05-31
+12/03/2025 14:10:44.392 - INFO - Trading day: 2024-05-31 16:00:00+07:00 to 2024-06-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.484 - DEBUG - For 2024-05-31 found 36 windows containing the high
+12/03/2025 14:10:44.485 - DEBUG - For 2024-05-31, found 21 windows containing the low
+12/03/2025 14:10:44.486 - DEBUG - For 2024-05-31, found 57 windows containing the low or high
+12/03/2025 14:10:44.486 - INFO - Computing EURUSD high and low windows for: 2024-06-03
+12/03/2025 14:10:44.486 - INFO - Trading day: 2024-06-03 16:00:00+07:00 to 2024-06-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.559 - DEBUG - For 2024-06-03 found 37 windows containing the high
+12/03/2025 14:10:44.561 - DEBUG - For 2024-06-03, found 31 windows containing the low
+12/03/2025 14:10:44.561 - DEBUG - For 2024-06-03, found 68 windows containing the low or high
+12/03/2025 14:10:44.562 - INFO - Computing EURUSD high and low windows for: 2024-06-04
+12/03/2025 14:10:44.563 - INFO - Trading day: 2024-06-04 16:00:00+07:00 to 2024-06-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.624 - DEBUG - For 2024-06-04 found 12 windows containing the high
+12/03/2025 14:10:44.624 - DEBUG - For 2024-06-04, found 62 windows containing the low
+12/03/2025 14:10:44.624 - DEBUG - For 2024-06-04, found 74 windows containing the low or high
+12/03/2025 14:10:44.640 - INFO - Computing EURUSD high and low windows for: 2024-06-05
+12/03/2025 14:10:44.641 - INFO - Trading day: 2024-06-05 16:00:00+07:00 to 2024-06-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.707 - DEBUG - For 2024-06-05 found 69 windows containing the high
+12/03/2025 14:10:44.707 - DEBUG - For 2024-06-05, found 23 windows containing the low
+12/03/2025 14:10:44.707 - DEBUG - For 2024-06-05, found 92 windows containing the low or high
+12/03/2025 14:10:44.707 - INFO - Computing EURUSD high and low windows for: 2024-06-06
+12/03/2025 14:10:44.707 - INFO - Trading day: 2024-06-06 16:00:00+07:00 to 2024-06-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.790 - DEBUG - For 2024-06-06 found 50 windows containing the high
+12/03/2025 14:10:44.791 - DEBUG - For 2024-06-06, found 28 windows containing the low
+12/03/2025 14:10:44.792 - DEBUG - For 2024-06-06, found 62 windows containing the low or high
+12/03/2025 14:10:44.792 - INFO - Computing EURUSD high and low windows for: 2024-06-07
+12/03/2025 14:10:44.793 - INFO - Trading day: 2024-06-07 16:00:00+07:00 to 2024-06-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.868 - DEBUG - For 2024-06-07 found 43 windows containing the high
+12/03/2025 14:10:44.869 - DEBUG - For 2024-06-07, found 83 windows containing the low
+12/03/2025 14:10:44.869 - DEBUG - For 2024-06-07, found 126 windows containing the low or high
+12/03/2025 14:10:44.870 - INFO - Computing EURUSD high and low windows for: 2024-06-10
+12/03/2025 14:10:44.870 - INFO - Trading day: 2024-06-10 16:00:00+07:00 to 2024-06-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:44.941 - DEBUG - For 2024-06-10 found 117 windows containing the high
+12/03/2025 14:10:44.942 - DEBUG - For 2024-06-10, found 68 windows containing the low
+12/03/2025 14:10:44.942 - DEBUG - For 2024-06-10, found 185 windows containing the low or high
+12/03/2025 14:10:44.942 - INFO - Computing EURUSD high and low windows for: 2024-06-11
+12/03/2025 14:10:44.942 - INFO - Trading day: 2024-06-11 16:00:00+07:00 to 2024-06-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.007 - DEBUG - For 2024-06-11 found 21 windows containing the high
+12/03/2025 14:10:45.007 - DEBUG - For 2024-06-11, found 61 windows containing the low
+12/03/2025 14:10:45.007 - DEBUG - For 2024-06-11, found 82 windows containing the low or high
+12/03/2025 14:10:45.007 - INFO - Computing EURUSD high and low windows for: 2024-06-12
+12/03/2025 14:10:45.007 - INFO - Trading day: 2024-06-12 16:00:00+07:00 to 2024-06-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.090 - DEBUG - For 2024-06-12 found 46 windows containing the high
+12/03/2025 14:10:45.090 - DEBUG - For 2024-06-12, found 20 windows containing the low
+12/03/2025 14:10:45.091 - DEBUG - For 2024-06-12, found 66 windows containing the low or high
+12/03/2025 14:10:45.091 - INFO - Computing EURUSD high and low windows for: 2024-06-13
+12/03/2025 14:10:45.092 - INFO - Trading day: 2024-06-13 16:00:00+07:00 to 2024-06-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.144 - DEBUG - For 2024-06-13 found 51 windows containing the high
+12/03/2025 14:10:45.157 - DEBUG - For 2024-06-13, found 65 windows containing the low
+12/03/2025 14:10:45.160 - DEBUG - For 2024-06-13, found 116 windows containing the low or high
+12/03/2025 14:10:45.162 - INFO - Computing EURUSD high and low windows for: 2024-06-14
+12/03/2025 14:10:45.162 - INFO - Trading day: 2024-06-14 16:00:00+07:00 to 2024-06-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.224 - DEBUG - For 2024-06-14 found 6 windows containing the high
+12/03/2025 14:10:45.224 - DEBUG - For 2024-06-14, found 54 windows containing the low
+12/03/2025 14:10:45.224 - DEBUG - For 2024-06-14, found 60 windows containing the low or high
+12/03/2025 14:10:45.224 - INFO - Computing EURUSD high and low windows for: 2024-06-17
+12/03/2025 14:10:45.224 - INFO - Trading day: 2024-06-17 16:00:00+07:00 to 2024-06-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.303 - DEBUG - For 2024-06-17 found 73 windows containing the high
+12/03/2025 14:10:45.303 - DEBUG - For 2024-06-17, found 5 windows containing the low
+12/03/2025 14:10:45.303 - DEBUG - For 2024-06-17, found 78 windows containing the low or high
+12/03/2025 14:10:45.303 - INFO - Computing EURUSD high and low windows for: 2024-06-18
+12/03/2025 14:10:45.306 - INFO - Trading day: 2024-06-18 16:00:00+07:00 to 2024-06-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.370 - DEBUG - For 2024-06-18 found 21 windows containing the high
+12/03/2025 14:10:45.370 - DEBUG - For 2024-06-18, found 56 windows containing the low
+12/03/2025 14:10:45.373 - DEBUG - For 2024-06-18, found 77 windows containing the low or high
+12/03/2025 14:10:45.373 - INFO - Computing EURUSD high and low windows for: 2024-06-19
+12/03/2025 14:10:45.373 - INFO - Trading day: 2024-06-19 16:00:00+07:00 to 2024-06-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.442 - DEBUG - For 2024-06-19 found 112 windows containing the high
+12/03/2025 14:10:45.445 - DEBUG - For 2024-06-19, found 21 windows containing the low
+12/03/2025 14:10:45.445 - DEBUG - For 2024-06-19, found 133 windows containing the low or high
+12/03/2025 14:10:45.445 - INFO - Computing EURUSD high and low windows for: 2024-06-20
+12/03/2025 14:10:45.445 - INFO - Trading day: 2024-06-20 16:00:00+07:00 to 2024-06-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.528 - DEBUG - For 2024-06-20 found 20 windows containing the high
+12/03/2025 14:10:45.531 - DEBUG - For 2024-06-20, found 123 windows containing the low
+12/03/2025 14:10:45.532 - DEBUG - For 2024-06-20, found 143 windows containing the low or high
+12/03/2025 14:10:45.533 - INFO - Computing EURUSD high and low windows for: 2024-06-21
+12/03/2025 14:10:45.535 - INFO - Trading day: 2024-06-21 16:00:00+07:00 to 2024-06-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.591 - DEBUG - For 2024-06-21 found 8 windows containing the high
+12/03/2025 14:10:45.591 - DEBUG - For 2024-06-21, found 22 windows containing the low
+12/03/2025 14:10:45.591 - DEBUG - For 2024-06-21, found 22 windows containing the low or high
+12/03/2025 14:10:45.591 - INFO - Computing EURUSD high and low windows for: 2024-06-24
+12/03/2025 14:10:45.591 - INFO - Trading day: 2024-06-24 16:00:00+07:00 to 2024-06-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.675 - DEBUG - For 2024-06-24 found 34 windows containing the high
+12/03/2025 14:10:45.676 - DEBUG - For 2024-06-24, found 18 windows containing the low
+12/03/2025 14:10:45.677 - DEBUG - For 2024-06-24, found 52 windows containing the low or high
+12/03/2025 14:10:45.677 - INFO - Computing EURUSD high and low windows for: 2024-06-25
+12/03/2025 14:10:45.678 - INFO - Trading day: 2024-06-25 16:00:00+07:00 to 2024-06-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.768 - DEBUG - For 2024-06-25 found 11 windows containing the high
+12/03/2025 14:10:45.768 - DEBUG - For 2024-06-25, found 26 windows containing the low
+12/03/2025 14:10:45.768 - DEBUG - For 2024-06-25, found 37 windows containing the low or high
+12/03/2025 14:10:45.768 - INFO - Computing EURUSD high and low windows for: 2024-06-26
+12/03/2025 14:10:45.768 - INFO - Trading day: 2024-06-26 16:00:00+07:00 to 2024-06-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.840 - DEBUG - For 2024-06-26 found 8 windows containing the high
+12/03/2025 14:10:45.842 - DEBUG - For 2024-06-26, found 23 windows containing the low
+12/03/2025 14:10:45.842 - DEBUG - For 2024-06-26, found 31 windows containing the low or high
+12/03/2025 14:10:45.842 - INFO - Computing EURUSD high and low windows for: 2024-06-27
+12/03/2025 14:10:45.842 - INFO - Trading day: 2024-06-27 16:00:00+07:00 to 2024-06-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.907 - DEBUG - For 2024-06-27 found 33 windows containing the high
+12/03/2025 14:10:45.907 - DEBUG - For 2024-06-27, found 42 windows containing the low
+12/03/2025 14:10:45.907 - DEBUG - For 2024-06-27, found 75 windows containing the low or high
+12/03/2025 14:10:45.907 - INFO - Computing EURUSD high and low windows for: 2024-06-28
+12/03/2025 14:10:45.907 - INFO - Trading day: 2024-06-28 16:00:00+07:00 to 2024-06-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:45.991 - DEBUG - For 2024-06-28 found 50 windows containing the high
+12/03/2025 14:10:45.991 - DEBUG - For 2024-06-28, found 94 windows containing the low
+12/03/2025 14:10:45.991 - DEBUG - For 2024-06-28, found 127 windows containing the low or high
+12/03/2025 14:10:45.991 - INFO - Computing EURUSD high and low windows for: 2024-07-01
+12/03/2025 14:10:45.991 - INFO - Trading day: 2024-07-01 16:00:00+07:00 to 2024-07-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.057 - DEBUG - For 2024-07-01 found 35 windows containing the high
+12/03/2025 14:10:46.057 - DEBUG - For 2024-07-01, found 50 windows containing the low
+12/03/2025 14:10:46.057 - DEBUG - For 2024-07-01, found 85 windows containing the low or high
+12/03/2025 14:10:46.057 - INFO - Computing EURUSD high and low windows for: 2024-07-02
+12/03/2025 14:10:46.057 - INFO - Trading day: 2024-07-02 16:00:00+07:00 to 2024-07-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.138 - DEBUG - For 2024-07-02 found 30 windows containing the high
+12/03/2025 14:10:46.138 - DEBUG - For 2024-07-02, found 38 windows containing the low
+12/03/2025 14:10:46.139 - DEBUG - For 2024-07-02, found 68 windows containing the low or high
+12/03/2025 14:10:46.140 - INFO - Computing EURUSD high and low windows for: 2024-07-03
+12/03/2025 14:10:46.140 - INFO - Trading day: 2024-07-03 16:00:00+07:00 to 2024-07-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.207 - DEBUG - For 2024-07-03 found 27 windows containing the high
+12/03/2025 14:10:46.209 - DEBUG - For 2024-07-03, found 11 windows containing the low
+12/03/2025 14:10:46.209 - DEBUG - For 2024-07-03, found 38 windows containing the low or high
+12/03/2025 14:10:46.209 - INFO - Computing EURUSD high and low windows for: 2024-07-04
+12/03/2025 14:10:46.209 - INFO - Trading day: 2024-07-04 16:00:00+07:00 to 2024-07-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.279 - DEBUG - For 2024-07-04 found 37 windows containing the high
+12/03/2025 14:10:46.279 - DEBUG - For 2024-07-04, found 18 windows containing the low
+12/03/2025 14:10:46.279 - DEBUG - For 2024-07-04, found 55 windows containing the low or high
+12/03/2025 14:10:46.279 - INFO - Computing EURUSD high and low windows for: 2024-07-05
+12/03/2025 14:10:46.279 - INFO - Trading day: 2024-07-05 16:00:00+07:00 to 2024-07-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.347 - DEBUG - For 2024-07-05 found 61 windows containing the high
+12/03/2025 14:10:46.347 - DEBUG - For 2024-07-05, found 19 windows containing the low
+12/03/2025 14:10:46.347 - DEBUG - For 2024-07-05, found 61 windows containing the low or high
+12/03/2025 14:10:46.347 - INFO - Computing EURUSD high and low windows for: 2024-07-08
+12/03/2025 14:10:46.347 - INFO - Trading day: 2024-07-08 16:00:00+07:00 to 2024-07-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.408 - DEBUG - For 2024-07-08 found 85 windows containing the high
+12/03/2025 14:10:46.408 - DEBUG - For 2024-07-08, found 27 windows containing the low
+12/03/2025 14:10:46.408 - DEBUG - For 2024-07-08, found 110 windows containing the low or high
+12/03/2025 14:10:46.408 - INFO - Computing EURUSD high and low windows for: 2024-07-09
+12/03/2025 14:10:46.408 - INFO - Trading day: 2024-07-09 16:00:00+07:00 to 2024-07-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.558 - DEBUG - For 2024-07-09 found 76 windows containing the high
+12/03/2025 14:10:46.558 - DEBUG - For 2024-07-09, found 93 windows containing the low
+12/03/2025 14:10:46.558 - DEBUG - For 2024-07-09, found 151 windows containing the low or high
+12/03/2025 14:10:46.558 - INFO - Computing EURUSD high and low windows for: 2024-07-10
+12/03/2025 14:10:46.558 - INFO - Trading day: 2024-07-10 16:00:00+07:00 to 2024-07-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.652 - DEBUG - For 2024-07-10 found 83 windows containing the high
+12/03/2025 14:10:46.654 - DEBUG - For 2024-07-10, found 52 windows containing the low
+12/03/2025 14:10:46.655 - DEBUG - For 2024-07-10, found 135 windows containing the low or high
+12/03/2025 14:10:46.657 - INFO - Computing EURUSD high and low windows for: 2024-07-11
+12/03/2025 14:10:46.658 - INFO - Trading day: 2024-07-11 16:00:00+07:00 to 2024-07-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.754 - DEBUG - For 2024-07-11 found 27 windows containing the high
+12/03/2025 14:10:46.755 - DEBUG - For 2024-07-11, found 23 windows containing the low
+12/03/2025 14:10:46.758 - DEBUG - For 2024-07-11, found 50 windows containing the low or high
+12/03/2025 14:10:46.758 - INFO - Computing EURUSD high and low windows for: 2024-07-12
+12/03/2025 14:10:46.758 - INFO - Trading day: 2024-07-12 16:00:00+07:00 to 2024-07-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.848 - DEBUG - For 2024-07-12 found 85 windows containing the high
+12/03/2025 14:10:46.849 - DEBUG - For 2024-07-12, found 18 windows containing the low
+12/03/2025 14:10:46.850 - DEBUG - For 2024-07-12, found 103 windows containing the low or high
+12/03/2025 14:10:46.851 - INFO - Computing EURUSD high and low windows for: 2024-07-15
+12/03/2025 14:10:46.851 - INFO - Trading day: 2024-07-15 16:00:00+07:00 to 2024-07-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:46.941 - DEBUG - For 2024-07-15 found 49 windows containing the high
+12/03/2025 14:10:46.942 - DEBUG - For 2024-07-15, found 66 windows containing the low
+12/03/2025 14:10:46.943 - DEBUG - For 2024-07-15, found 115 windows containing the low or high
+12/03/2025 14:10:46.944 - INFO - Computing EURUSD high and low windows for: 2024-07-16
+12/03/2025 14:10:46.945 - INFO - Trading day: 2024-07-16 16:00:00+07:00 to 2024-07-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.039 - DEBUG - For 2024-07-16 found 176 windows containing the high
+12/03/2025 14:10:47.041 - DEBUG - For 2024-07-16, found 43 windows containing the low
+12/03/2025 14:10:47.042 - DEBUG - For 2024-07-16, found 205 windows containing the low or high
+12/03/2025 14:10:47.044 - INFO - Computing EURUSD high and low windows for: 2024-07-17
+12/03/2025 14:10:47.045 - INFO - Trading day: 2024-07-17 16:00:00+07:00 to 2024-07-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.131 - DEBUG - For 2024-07-17 found 69 windows containing the high
+12/03/2025 14:10:47.133 - DEBUG - For 2024-07-17, found 15 windows containing the low
+12/03/2025 14:10:47.133 - DEBUG - For 2024-07-17, found 84 windows containing the low or high
+12/03/2025 14:10:47.133 - INFO - Computing EURUSD high and low windows for: 2024-07-18
+12/03/2025 14:10:47.134 - INFO - Trading day: 2024-07-18 16:00:00+07:00 to 2024-07-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.208 - DEBUG - For 2024-07-18 found 77 windows containing the high
+12/03/2025 14:10:47.208 - DEBUG - For 2024-07-18, found 55 windows containing the low
+12/03/2025 14:10:47.208 - DEBUG - For 2024-07-18, found 132 windows containing the low or high
+12/03/2025 14:10:47.208 - INFO - Computing EURUSD high and low windows for: 2024-07-19
+12/03/2025 14:10:47.208 - INFO - Trading day: 2024-07-19 16:00:00+07:00 to 2024-07-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.295 - DEBUG - For 2024-07-19 found 107 windows containing the high
+12/03/2025 14:10:47.296 - DEBUG - For 2024-07-19, found 115 windows containing the low
+12/03/2025 14:10:47.297 - DEBUG - For 2024-07-19, found 177 windows containing the low or high
+12/03/2025 14:10:47.298 - INFO - Computing EURUSD high and low windows for: 2024-07-22
+12/03/2025 14:10:47.299 - INFO - Trading day: 2024-07-22 16:00:00+07:00 to 2024-07-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.391 - DEBUG - For 2024-07-22 found 179 windows containing the high
+12/03/2025 14:10:47.392 - DEBUG - For 2024-07-22, found 56 windows containing the low
+12/03/2025 14:10:47.392 - DEBUG - For 2024-07-22, found 233 windows containing the low or high
+12/03/2025 14:10:47.393 - INFO - Computing EURUSD high and low windows for: 2024-07-23
+12/03/2025 14:10:47.394 - INFO - Trading day: 2024-07-23 16:00:00+07:00 to 2024-07-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.458 - DEBUG - For 2024-07-23 found 15 windows containing the high
+12/03/2025 14:10:47.458 - DEBUG - For 2024-07-23, found 106 windows containing the low
+12/03/2025 14:10:47.458 - DEBUG - For 2024-07-23, found 121 windows containing the low or high
+12/03/2025 14:10:47.458 - INFO - Computing EURUSD high and low windows for: 2024-07-24
+12/03/2025 14:10:47.458 - INFO - Trading day: 2024-07-24 16:00:00+07:00 to 2024-07-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.551 - DEBUG - For 2024-07-24 found 30 windows containing the high
+12/03/2025 14:10:47.552 - DEBUG - For 2024-07-24, found 27 windows containing the low
+12/03/2025 14:10:47.553 - DEBUG - For 2024-07-24, found 57 windows containing the low or high
+12/03/2025 14:10:47.554 - INFO - Computing EURUSD high and low windows for: 2024-07-25
+12/03/2025 14:10:47.555 - INFO - Trading day: 2024-07-25 16:00:00+07:00 to 2024-07-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.625 - DEBUG - For 2024-07-25 found 22 windows containing the high
+12/03/2025 14:10:47.625 - DEBUG - For 2024-07-25, found 38 windows containing the low
+12/03/2025 14:10:47.625 - DEBUG - For 2024-07-25, found 60 windows containing the low or high
+12/03/2025 14:10:47.625 - INFO - Computing EURUSD high and low windows for: 2024-07-26
+12/03/2025 14:10:47.625 - INFO - Trading day: 2024-07-26 16:00:00+07:00 to 2024-07-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.694 - DEBUG - For 2024-07-26 found 82 windows containing the high
+12/03/2025 14:10:47.694 - DEBUG - For 2024-07-26, found 29 windows containing the low
+12/03/2025 14:10:47.694 - DEBUG - For 2024-07-26, found 111 windows containing the low or high
+12/03/2025 14:10:47.707 - INFO - Computing EURUSD high and low windows for: 2024-07-29
+12/03/2025 14:10:47.707 - INFO - Trading day: 2024-07-29 16:00:00+07:00 to 2024-07-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.786 - DEBUG - For 2024-07-29 found 15 windows containing the high
+12/03/2025 14:10:47.788 - DEBUG - For 2024-07-29, found 24 windows containing the low
+12/03/2025 14:10:47.791 - DEBUG - For 2024-07-29, found 39 windows containing the low or high
+12/03/2025 14:10:47.791 - INFO - Computing EURUSD high and low windows for: 2024-07-30
+12/03/2025 14:10:47.792 - INFO - Trading day: 2024-07-30 16:00:00+07:00 to 2024-07-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.869 - DEBUG - For 2024-07-30 found 55 windows containing the high
+12/03/2025 14:10:47.869 - DEBUG - For 2024-07-30, found 50 windows containing the low
+12/03/2025 14:10:47.873 - DEBUG - For 2024-07-30, found 104 windows containing the low or high
+12/03/2025 14:10:47.874 - INFO - Computing EURUSD high and low windows for: 2024-07-31
+12/03/2025 14:10:47.875 - INFO - Trading day: 2024-07-31 16:00:00+07:00 to 2024-08-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:47.954 - DEBUG - For 2024-07-31 found 38 windows containing the high
+12/03/2025 14:10:47.955 - DEBUG - For 2024-07-31, found 58 windows containing the low
+12/03/2025 14:10:47.955 - DEBUG - For 2024-07-31, found 96 windows containing the low or high
+12/03/2025 14:10:47.956 - INFO - Computing EURUSD high and low windows for: 2024-08-01
+12/03/2025 14:10:47.957 - INFO - Trading day: 2024-08-01 16:00:00+07:00 to 2024-08-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.024 - DEBUG - For 2024-08-01 found 6 windows containing the high
+12/03/2025 14:10:48.032 - DEBUG - For 2024-08-01, found 90 windows containing the low
+12/03/2025 14:10:48.033 - DEBUG - For 2024-08-01, found 96 windows containing the low or high
+12/03/2025 14:10:48.035 - INFO - Computing EURUSD high and low windows for: 2024-08-02
+12/03/2025 14:10:48.035 - INFO - Trading day: 2024-08-02 16:00:00+07:00 to 2024-08-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.090 - DEBUG - For 2024-08-02 found 30 windows containing the high
+12/03/2025 14:10:48.090 - DEBUG - For 2024-08-02, found 17 windows containing the low
+12/03/2025 14:10:48.090 - DEBUG - For 2024-08-02, found 47 windows containing the low or high
+12/03/2025 14:10:48.090 - INFO - Computing EURUSD high and low windows for: 2024-08-05
+12/03/2025 14:10:48.090 - INFO - Trading day: 2024-08-05 16:00:00+07:00 to 2024-08-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.177 - DEBUG - For 2024-08-05 found 19 windows containing the high
+12/03/2025 14:10:48.177 - DEBUG - For 2024-08-05, found 3 windows containing the low
+12/03/2025 14:10:48.177 - DEBUG - For 2024-08-05, found 22 windows containing the low or high
+12/03/2025 14:10:48.177 - INFO - Computing EURUSD high and low windows for: 2024-08-06
+12/03/2025 14:10:48.177 - INFO - Trading day: 2024-08-06 16:00:00+07:00 to 2024-08-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.267 - DEBUG - For 2024-08-06 found 8 windows containing the high
+12/03/2025 14:10:48.267 - DEBUG - For 2024-08-06, found 66 windows containing the low
+12/03/2025 14:10:48.267 - DEBUG - For 2024-08-06, found 74 windows containing the low or high
+12/03/2025 14:10:48.268 - INFO - Computing EURUSD high and low windows for: 2024-08-07
+12/03/2025 14:10:48.268 - INFO - Trading day: 2024-08-07 16:00:00+07:00 to 2024-08-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.369 - DEBUG - For 2024-08-07 found 92 windows containing the high
+12/03/2025 14:10:48.370 - DEBUG - For 2024-08-07, found 41 windows containing the low
+12/03/2025 14:10:48.371 - DEBUG - For 2024-08-07, found 133 windows containing the low or high
+12/03/2025 14:10:48.373 - INFO - Computing EURUSD high and low windows for: 2024-08-08
+12/03/2025 14:10:48.374 - INFO - Trading day: 2024-08-08 16:00:00+07:00 to 2024-08-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.442 - DEBUG - For 2024-08-08 found 36 windows containing the high
+12/03/2025 14:10:48.457 - DEBUG - For 2024-08-08, found 21 windows containing the low
+12/03/2025 14:10:48.458 - DEBUG - For 2024-08-08, found 57 windows containing the low or high
+12/03/2025 14:10:48.459 - INFO - Computing EURUSD high and low windows for: 2024-08-09
+12/03/2025 14:10:48.460 - INFO - Trading day: 2024-08-09 16:00:00+07:00 to 2024-08-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.554 - DEBUG - For 2024-08-09 found 59 windows containing the high
+12/03/2025 14:10:48.557 - DEBUG - For 2024-08-09, found 57 windows containing the low
+12/03/2025 14:10:48.558 - DEBUG - For 2024-08-09, found 105 windows containing the low or high
+12/03/2025 14:10:48.558 - INFO - Computing EURUSD high and low windows for: 2024-08-12
+12/03/2025 14:10:48.559 - INFO - Trading day: 2024-08-12 16:00:00+07:00 to 2024-08-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.650 - DEBUG - For 2024-08-12 found 90 windows containing the high
+12/03/2025 14:10:48.651 - DEBUG - For 2024-08-12, found 93 windows containing the low
+12/03/2025 14:10:48.652 - DEBUG - For 2024-08-12, found 173 windows containing the low or high
+12/03/2025 14:10:48.654 - INFO - Computing EURUSD high and low windows for: 2024-08-13
+12/03/2025 14:10:48.655 - INFO - Trading day: 2024-08-13 16:00:00+07:00 to 2024-08-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.747 - DEBUG - For 2024-08-13 found 115 windows containing the high
+12/03/2025 14:10:48.748 - DEBUG - For 2024-08-13, found 33 windows containing the low
+12/03/2025 14:10:48.748 - DEBUG - For 2024-08-13, found 148 windows containing the low or high
+12/03/2025 14:10:48.750 - INFO - Computing EURUSD high and low windows for: 2024-08-14
+12/03/2025 14:10:48.750 - INFO - Trading day: 2024-08-14 16:00:00+07:00 to 2024-08-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.836 - DEBUG - For 2024-08-14 found 32 windows containing the high
+12/03/2025 14:10:48.837 - DEBUG - For 2024-08-14, found 8 windows containing the low
+12/03/2025 14:10:48.839 - DEBUG - For 2024-08-14, found 40 windows containing the low or high
+12/03/2025 14:10:48.840 - INFO - Computing EURUSD high and low windows for: 2024-08-15
+12/03/2025 14:10:48.840 - INFO - Trading day: 2024-08-15 16:00:00+07:00 to 2024-08-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:48.891 - DEBUG - For 2024-08-15 found 78 windows containing the high
+12/03/2025 14:10:48.891 - DEBUG - For 2024-08-15, found 24 windows containing the low
+12/03/2025 14:10:48.907 - DEBUG - For 2024-08-15, found 88 windows containing the low or high
+12/03/2025 14:10:48.908 - INFO - Computing EURUSD high and low windows for: 2024-08-16
+12/03/2025 14:10:48.908 - INFO - Trading day: 2024-08-16 16:00:00+07:00 to 2024-08-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.003 - DEBUG - For 2024-08-16 found 31 windows containing the high
+12/03/2025 14:10:49.004 - DEBUG - For 2024-08-16, found 40 windows containing the low
+12/03/2025 14:10:49.006 - DEBUG - For 2024-08-16, found 71 windows containing the low or high
+12/03/2025 14:10:49.007 - INFO - Computing EURUSD high and low windows for: 2024-08-19
+12/03/2025 14:10:49.008 - INFO - Trading day: 2024-08-19 16:00:00+07:00 to 2024-08-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.094 - DEBUG - For 2024-08-19 found 118 windows containing the high
+12/03/2025 14:10:49.094 - DEBUG - For 2024-08-19, found 71 windows containing the low
+12/03/2025 14:10:49.094 - DEBUG - For 2024-08-19, found 189 windows containing the low or high
+12/03/2025 14:10:49.094 - INFO - Computing EURUSD high and low windows for: 2024-08-20
+12/03/2025 14:10:49.094 - INFO - Trading day: 2024-08-20 16:00:00+07:00 to 2024-08-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.175 - DEBUG - For 2024-08-20 found 78 windows containing the high
+12/03/2025 14:10:49.175 - DEBUG - For 2024-08-20, found 68 windows containing the low
+12/03/2025 14:10:49.191 - DEBUG - For 2024-08-20, found 146 windows containing the low or high
+12/03/2025 14:10:49.192 - INFO - Computing EURUSD high and low windows for: 2024-08-21
+12/03/2025 14:10:49.195 - INFO - Trading day: 2024-08-21 16:00:00+07:00 to 2024-08-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.270 - DEBUG - For 2024-08-21 found 23 windows containing the high
+12/03/2025 14:10:49.270 - DEBUG - For 2024-08-21, found 20 windows containing the low
+12/03/2025 14:10:49.274 - DEBUG - For 2024-08-21, found 43 windows containing the low or high
+12/03/2025 14:10:49.275 - INFO - Computing EURUSD high and low windows for: 2024-08-22
+12/03/2025 14:10:49.275 - INFO - Trading day: 2024-08-22 16:00:00+07:00 to 2024-08-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.350 - DEBUG - For 2024-08-22 found 16 windows containing the high
+12/03/2025 14:10:49.351 - DEBUG - For 2024-08-22, found 48 windows containing the low
+12/03/2025 14:10:49.352 - DEBUG - For 2024-08-22, found 64 windows containing the low or high
+12/03/2025 14:10:49.353 - INFO - Computing EURUSD high and low windows for: 2024-08-23
+12/03/2025 14:10:49.353 - INFO - Trading day: 2024-08-23 16:00:00+07:00 to 2024-08-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.418 - DEBUG - For 2024-08-23 found 32 windows containing the high
+12/03/2025 14:10:49.418 - DEBUG - For 2024-08-23, found 29 windows containing the low
+12/03/2025 14:10:49.424 - DEBUG - For 2024-08-23, found 61 windows containing the low or high
+12/03/2025 14:10:49.425 - INFO - Computing EURUSD high and low windows for: 2024-08-26
+12/03/2025 14:10:49.425 - INFO - Trading day: 2024-08-26 16:00:00+07:00 to 2024-08-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.502 - DEBUG - For 2024-08-26 found 29 windows containing the high
+12/03/2025 14:10:49.502 - DEBUG - For 2024-08-26, found 31 windows containing the low
+12/03/2025 14:10:49.502 - DEBUG - For 2024-08-26, found 60 windows containing the low or high
+12/03/2025 14:10:49.507 - INFO - Computing EURUSD high and low windows for: 2024-08-27
+12/03/2025 14:10:49.507 - INFO - Trading day: 2024-08-27 16:00:00+07:00 to 2024-08-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.575 - DEBUG - For 2024-08-27 found 51 windows containing the high
+12/03/2025 14:10:49.575 - DEBUG - For 2024-08-27, found 7 windows containing the low
+12/03/2025 14:10:49.575 - DEBUG - For 2024-08-27, found 58 windows containing the low or high
+12/03/2025 14:10:49.575 - INFO - Computing EURUSD high and low windows for: 2024-08-28
+12/03/2025 14:10:49.575 - INFO - Trading day: 2024-08-28 16:00:00+07:00 to 2024-08-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.655 - DEBUG - For 2024-08-28 found 29 windows containing the high
+12/03/2025 14:10:49.657 - DEBUG - For 2024-08-28, found 56 windows containing the low
+12/03/2025 14:10:49.658 - DEBUG - For 2024-08-28, found 85 windows containing the low or high
+12/03/2025 14:10:49.659 - INFO - Computing EURUSD high and low windows for: 2024-08-29
+12/03/2025 14:10:49.659 - INFO - Trading day: 2024-08-29 16:00:00+07:00 to 2024-08-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.723 - DEBUG - For 2024-08-29 found 6 windows containing the high
+12/03/2025 14:10:49.723 - DEBUG - For 2024-08-29, found 22 windows containing the low
+12/03/2025 14:10:49.723 - DEBUG - For 2024-08-29, found 28 windows containing the low or high
+12/03/2025 14:10:49.738 - INFO - Computing EURUSD high and low windows for: 2024-08-30
+12/03/2025 14:10:49.738 - INFO - Trading day: 2024-08-30 16:00:00+07:00 to 2024-08-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.840 - DEBUG - For 2024-08-30 found 26 windows containing the high
+12/03/2025 14:10:49.841 - DEBUG - For 2024-08-30, found 65 windows containing the low
+12/03/2025 14:10:49.842 - DEBUG - For 2024-08-30, found 91 windows containing the low or high
+12/03/2025 14:10:49.843 - INFO - Computing EURUSD high and low windows for: 2024-09-02
+12/03/2025 14:10:49.844 - INFO - Trading day: 2024-09-02 16:00:00+07:00 to 2024-09-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.908 - DEBUG - For 2024-09-02 found 79 windows containing the high
+12/03/2025 14:10:49.908 - DEBUG - For 2024-09-02, found 75 windows containing the low
+12/03/2025 14:10:49.908 - DEBUG - For 2024-09-02, found 139 windows containing the low or high
+12/03/2025 14:10:49.908 - INFO - Computing EURUSD high and low windows for: 2024-09-03
+12/03/2025 14:10:49.908 - INFO - Trading day: 2024-09-03 16:00:00+07:00 to 2024-09-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:49.994 - DEBUG - For 2024-09-03 found 37 windows containing the high
+12/03/2025 14:10:50.005 - DEBUG - For 2024-09-03, found 47 windows containing the low
+12/03/2025 14:10:50.007 - DEBUG - For 2024-09-03, found 84 windows containing the low or high
+12/03/2025 14:10:50.009 - INFO - Computing EURUSD high and low windows for: 2024-09-04
+12/03/2025 14:10:50.009 - INFO - Trading day: 2024-09-04 16:00:00+07:00 to 2024-09-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.092 - DEBUG - For 2024-09-04 found 23 windows containing the high
+12/03/2025 14:10:50.092 - DEBUG - For 2024-09-04, found 29 windows containing the low
+12/03/2025 14:10:50.092 - DEBUG - For 2024-09-04, found 52 windows containing the low or high
+12/03/2025 14:10:50.092 - INFO - Computing EURUSD high and low windows for: 2024-09-05
+12/03/2025 14:10:50.092 - INFO - Trading day: 2024-09-05 16:00:00+07:00 to 2024-09-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.179 - DEBUG - For 2024-09-05 found 70 windows containing the high
+12/03/2025 14:10:50.179 - DEBUG - For 2024-09-05, found 49 windows containing the low
+12/03/2025 14:10:50.179 - DEBUG - For 2024-09-05, found 119 windows containing the low or high
+12/03/2025 14:10:50.179 - INFO - Computing EURUSD high and low windows for: 2024-09-06
+12/03/2025 14:10:50.179 - INFO - Trading day: 2024-09-06 16:00:00+07:00 to 2024-09-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.261 - DEBUG - For 2024-09-06 found 19 windows containing the high
+12/03/2025 14:10:50.262 - DEBUG - For 2024-09-06, found 43 windows containing the low
+12/03/2025 14:10:50.263 - DEBUG - For 2024-09-06, found 58 windows containing the low or high
+12/03/2025 14:10:50.263 - INFO - Computing EURUSD high and low windows for: 2024-09-09
+12/03/2025 14:10:50.264 - INFO - Trading day: 2024-09-09 16:00:00+07:00 to 2024-09-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.357 - DEBUG - For 2024-09-09 found 10 windows containing the high
+12/03/2025 14:10:50.357 - DEBUG - For 2024-09-09, found 65 windows containing the low
+12/03/2025 14:10:50.357 - DEBUG - For 2024-09-09, found 75 windows containing the low or high
+12/03/2025 14:10:50.357 - INFO - Computing EURUSD high and low windows for: 2024-09-10
+12/03/2025 14:10:50.357 - INFO - Trading day: 2024-09-10 16:00:00+07:00 to 2024-09-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.457 - DEBUG - For 2024-09-10 found 31 windows containing the high
+12/03/2025 14:10:50.459 - DEBUG - For 2024-09-10, found 114 windows containing the low
+12/03/2025 14:10:50.460 - DEBUG - For 2024-09-10, found 145 windows containing the low or high
+12/03/2025 14:10:50.460 - INFO - Computing EURUSD high and low windows for: 2024-09-11
+12/03/2025 14:10:50.461 - INFO - Trading day: 2024-09-11 16:00:00+07:00 to 2024-09-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.524 - DEBUG - For 2024-09-11 found 48 windows containing the high
+12/03/2025 14:10:50.524 - DEBUG - For 2024-09-11, found 68 windows containing the low
+12/03/2025 14:10:50.524 - DEBUG - For 2024-09-11, found 107 windows containing the low or high
+12/03/2025 14:10:50.524 - INFO - Computing EURUSD high and low windows for: 2024-09-12
+12/03/2025 14:10:50.524 - INFO - Trading day: 2024-09-12 16:00:00+07:00 to 2024-09-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.624 - DEBUG - For 2024-09-12 found 65 windows containing the high
+12/03/2025 14:10:50.625 - DEBUG - For 2024-09-12, found 48 windows containing the low
+12/03/2025 14:10:50.625 - DEBUG - For 2024-09-12, found 113 windows containing the low or high
+12/03/2025 14:10:50.626 - INFO - Computing EURUSD high and low windows for: 2024-09-13
+12/03/2025 14:10:50.626 - INFO - Trading day: 2024-09-13 16:00:00+07:00 to 2024-09-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.697 - DEBUG - For 2024-09-13 found 55 windows containing the high
+12/03/2025 14:10:50.697 - DEBUG - For 2024-09-13, found 83 windows containing the low
+12/03/2025 14:10:50.697 - DEBUG - For 2024-09-13, found 138 windows containing the low or high
+12/03/2025 14:10:50.697 - INFO - Computing EURUSD high and low windows for: 2024-09-16
+12/03/2025 14:10:50.697 - INFO - Trading day: 2024-09-16 16:00:00+07:00 to 2024-09-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.769 - DEBUG - For 2024-09-16 found 55 windows containing the high
+12/03/2025 14:10:50.771 - DEBUG - For 2024-09-16, found 7 windows containing the low
+12/03/2025 14:10:50.772 - DEBUG - For 2024-09-16, found 62 windows containing the low or high
+12/03/2025 14:10:50.773 - INFO - Computing EURUSD high and low windows for: 2024-09-17
+12/03/2025 14:10:50.773 - INFO - Trading day: 2024-09-17 16:00:00+07:00 to 2024-09-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.842 - DEBUG - For 2024-09-17 found 51 windows containing the high
+12/03/2025 14:10:50.845 - DEBUG - For 2024-09-17, found 127 windows containing the low
+12/03/2025 14:10:50.845 - DEBUG - For 2024-09-17, found 166 windows containing the low or high
+12/03/2025 14:10:50.845 - INFO - Computing EURUSD high and low windows for: 2024-09-18
+12/03/2025 14:10:50.847 - INFO - Trading day: 2024-09-18 16:00:00+07:00 to 2024-09-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:50.919 - DEBUG - For 2024-09-18 found 21 windows containing the high
+12/03/2025 14:10:50.919 - DEBUG - For 2024-09-18, found 21 windows containing the low
+12/03/2025 14:10:50.919 - DEBUG - For 2024-09-18, found 42 windows containing the low or high
+12/03/2025 14:10:50.919 - INFO - Computing EURUSD high and low windows for: 2024-09-19
+12/03/2025 14:10:50.922 - INFO - Trading day: 2024-09-19 16:00:00+07:00 to 2024-09-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.000 - DEBUG - For 2024-09-19 found 41 windows containing the high
+12/03/2025 14:10:51.006 - DEBUG - For 2024-09-19, found 33 windows containing the low
+12/03/2025 14:10:51.007 - DEBUG - For 2024-09-19, found 74 windows containing the low or high
+12/03/2025 14:10:51.008 - INFO - Computing EURUSD high and low windows for: 2024-09-20
+12/03/2025 14:10:51.008 - INFO - Trading day: 2024-09-20 16:00:00+07:00 to 2024-09-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.082 - DEBUG - For 2024-09-20 found 19 windows containing the high
+12/03/2025 14:10:51.082 - DEBUG - For 2024-09-20, found 34 windows containing the low
+12/03/2025 14:10:51.082 - DEBUG - For 2024-09-20, found 53 windows containing the low or high
+12/03/2025 14:10:51.082 - INFO - Computing EURUSD high and low windows for: 2024-09-23
+12/03/2025 14:10:51.082 - INFO - Trading day: 2024-09-23 16:00:00+07:00 to 2024-09-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.154 - DEBUG - For 2024-09-23 found 13 windows containing the high
+12/03/2025 14:10:51.156 - DEBUG - For 2024-09-23, found 25 windows containing the low
+12/03/2025 14:10:51.157 - DEBUG - For 2024-09-23, found 33 windows containing the low or high
+12/03/2025 14:10:51.157 - INFO - Computing EURUSD high and low windows for: 2024-09-24
+12/03/2025 14:10:51.157 - INFO - Trading day: 2024-09-24 16:00:00+07:00 to 2024-09-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.208 - DEBUG - For 2024-09-24 found 65 windows containing the high
+12/03/2025 14:10:51.223 - DEBUG - For 2024-09-24, found 10 windows containing the low
+12/03/2025 14:10:51.225 - DEBUG - For 2024-09-24, found 75 windows containing the low or high
+12/03/2025 14:10:51.226 - INFO - Computing EURUSD high and low windows for: 2024-09-25
+12/03/2025 14:10:51.227 - INFO - Trading day: 2024-09-25 16:00:00+07:00 to 2024-09-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.292 - DEBUG - For 2024-09-25 found 23 windows containing the high
+12/03/2025 14:10:51.292 - DEBUG - For 2024-09-25, found 52 windows containing the low
+12/03/2025 14:10:51.292 - DEBUG - For 2024-09-25, found 75 windows containing the low or high
+12/03/2025 14:10:51.292 - INFO - Computing EURUSD high and low windows for: 2024-09-26
+12/03/2025 14:10:51.292 - INFO - Trading day: 2024-09-26 16:00:00+07:00 to 2024-09-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.381 - DEBUG - For 2024-09-26 found 41 windows containing the high
+12/03/2025 14:10:51.383 - DEBUG - For 2024-09-26, found 44 windows containing the low
+12/03/2025 14:10:51.383 - DEBUG - For 2024-09-26, found 84 windows containing the low or high
+12/03/2025 14:10:51.384 - INFO - Computing EURUSD high and low windows for: 2024-09-27
+12/03/2025 14:10:51.385 - INFO - Trading day: 2024-09-27 16:00:00+07:00 to 2024-09-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.463 - DEBUG - For 2024-09-27 found 23 windows containing the high
+12/03/2025 14:10:51.464 - DEBUG - For 2024-09-27, found 26 windows containing the low
+12/03/2025 14:10:51.465 - DEBUG - For 2024-09-27, found 49 windows containing the low or high
+12/03/2025 14:10:51.465 - INFO - Computing EURUSD high and low windows for: 2024-09-30
+12/03/2025 14:10:51.465 - INFO - Trading day: 2024-09-30 16:00:00+07:00 to 2024-10-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.532 - DEBUG - For 2024-09-30 found 21 windows containing the high
+12/03/2025 14:10:51.532 - DEBUG - For 2024-09-30, found 21 windows containing the low
+12/03/2025 14:10:51.532 - DEBUG - For 2024-09-30, found 42 windows containing the low or high
+12/03/2025 14:10:51.532 - INFO - Computing EURUSD high and low windows for: 2024-10-01
+12/03/2025 14:10:51.532 - INFO - Trading day: 2024-10-01 16:00:00+07:00 to 2024-10-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.590 - DEBUG - For 2024-10-01 found 13 windows containing the high
+12/03/2025 14:10:51.590 - DEBUG - For 2024-10-01, found 27 windows containing the low
+12/03/2025 14:10:51.590 - DEBUG - For 2024-10-01, found 40 windows containing the low or high
+12/03/2025 14:10:51.590 - INFO - Computing EURUSD high and low windows for: 2024-10-02
+12/03/2025 14:10:51.590 - INFO - Trading day: 2024-10-02 16:00:00+07:00 to 2024-10-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.674 - DEBUG - For 2024-10-02 found 25 windows containing the high
+12/03/2025 14:10:51.675 - DEBUG - For 2024-10-02, found 12 windows containing the low
+12/03/2025 14:10:51.676 - DEBUG - For 2024-10-02, found 37 windows containing the low or high
+12/03/2025 14:10:51.676 - INFO - Computing EURUSD high and low windows for: 2024-10-03
+12/03/2025 14:10:51.678 - INFO - Trading day: 2024-10-03 16:00:00+07:00 to 2024-10-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.770 - DEBUG - For 2024-10-03 found 94 windows containing the high
+12/03/2025 14:10:51.771 - DEBUG - For 2024-10-03, found 29 windows containing the low
+12/03/2025 14:10:51.772 - DEBUG - For 2024-10-03, found 115 windows containing the low or high
+12/03/2025 14:10:51.773 - INFO - Computing EURUSD high and low windows for: 2024-10-04
+12/03/2025 14:10:51.774 - INFO - Trading day: 2024-10-04 16:00:00+07:00 to 2024-10-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.912 - DEBUG - For 2024-10-04 found 62 windows containing the high
+12/03/2025 14:10:51.912 - DEBUG - For 2024-10-04, found 29 windows containing the low
+12/03/2025 14:10:51.912 - DEBUG - For 2024-10-04, found 91 windows containing the low or high
+12/03/2025 14:10:51.912 - INFO - Computing EURUSD high and low windows for: 2024-10-07
+12/03/2025 14:10:51.912 - INFO - Trading day: 2024-10-07 16:00:00+07:00 to 2024-10-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:51.989 - DEBUG - For 2024-10-07 found 149 windows containing the high
+12/03/2025 14:10:51.991 - DEBUG - For 2024-10-07, found 62 windows containing the low
+12/03/2025 14:10:51.992 - DEBUG - For 2024-10-07, found 211 windows containing the low or high
+12/03/2025 14:10:51.994 - INFO - Computing EURUSD high and low windows for: 2024-10-08
+12/03/2025 14:10:51.994 - INFO - Trading day: 2024-10-08 16:00:00+07:00 to 2024-10-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.074 - DEBUG - For 2024-10-08 found 42 windows containing the high
+12/03/2025 14:10:52.076 - DEBUG - For 2024-10-08, found 63 windows containing the low
+12/03/2025 14:10:52.077 - DEBUG - For 2024-10-08, found 105 windows containing the low or high
+12/03/2025 14:10:52.078 - INFO - Computing EURUSD high and low windows for: 2024-10-09
+12/03/2025 14:10:52.079 - INFO - Trading day: 2024-10-09 16:00:00+07:00 to 2024-10-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.140 - DEBUG - For 2024-10-09 found 29 windows containing the high
+12/03/2025 14:10:52.140 - DEBUG - For 2024-10-09, found 171 windows containing the low
+12/03/2025 14:10:52.140 - DEBUG - For 2024-10-09, found 200 windows containing the low or high
+12/03/2025 14:10:52.140 - INFO - Computing EURUSD high and low windows for: 2024-10-10
+12/03/2025 14:10:52.140 - INFO - Trading day: 2024-10-10 16:00:00+07:00 to 2024-10-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.207 - DEBUG - For 2024-10-10 found 19 windows containing the high
+12/03/2025 14:10:52.207 - DEBUG - For 2024-10-10, found 25 windows containing the low
+12/03/2025 14:10:52.207 - DEBUG - For 2024-10-10, found 44 windows containing the low or high
+12/03/2025 14:10:52.207 - INFO - Computing EURUSD high and low windows for: 2024-10-11
+12/03/2025 14:10:52.207 - INFO - Trading day: 2024-10-11 16:00:00+07:00 to 2024-10-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.274 - DEBUG - For 2024-10-11 found 78 windows containing the high
+12/03/2025 14:10:52.274 - DEBUG - For 2024-10-11, found 48 windows containing the low
+12/03/2025 14:10:52.274 - DEBUG - For 2024-10-11, found 106 windows containing the low or high
+12/03/2025 14:10:52.289 - INFO - Computing EURUSD high and low windows for: 2024-10-14
+12/03/2025 14:10:52.290 - INFO - Trading day: 2024-10-14 16:00:00+07:00 to 2024-10-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.357 - DEBUG - For 2024-10-14 found 40 windows containing the high
+12/03/2025 14:10:52.358 - DEBUG - For 2024-10-14, found 40 windows containing the low
+12/03/2025 14:10:52.358 - DEBUG - For 2024-10-14, found 80 windows containing the low or high
+12/03/2025 14:10:52.358 - INFO - Computing EURUSD high and low windows for: 2024-10-15
+12/03/2025 14:10:52.358 - INFO - Trading day: 2024-10-15 16:00:00+07:00 to 2024-10-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.424 - DEBUG - For 2024-10-15 found 76 windows containing the high
+12/03/2025 14:10:52.439 - DEBUG - For 2024-10-15, found 126 windows containing the low
+12/03/2025 14:10:52.440 - DEBUG - For 2024-10-15, found 200 windows containing the low or high
+12/03/2025 14:10:52.440 - INFO - Computing EURUSD high and low windows for: 2024-10-16
+12/03/2025 14:10:52.441 - INFO - Trading day: 2024-10-16 16:00:00+07:00 to 2024-10-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.508 - DEBUG - For 2024-10-16 found 57 windows containing the high
+12/03/2025 14:10:52.508 - DEBUG - For 2024-10-16, found 81 windows containing the low
+12/03/2025 14:10:52.508 - DEBUG - For 2024-10-16, found 138 windows containing the low or high
+12/03/2025 14:10:52.508 - INFO - Computing EURUSD high and low windows for: 2024-10-17
+12/03/2025 14:10:52.508 - INFO - Trading day: 2024-10-17 16:00:00+07:00 to 2024-10-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.575 - DEBUG - For 2024-10-17 found 20 windows containing the high
+12/03/2025 14:10:52.575 - DEBUG - For 2024-10-17, found 36 windows containing the low
+12/03/2025 14:10:52.575 - DEBUG - For 2024-10-17, found 47 windows containing the low or high
+12/03/2025 14:10:52.575 - INFO - Computing EURUSD high and low windows for: 2024-10-18
+12/03/2025 14:10:52.575 - INFO - Trading day: 2024-10-18 16:00:00+07:00 to 2024-10-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.641 - DEBUG - For 2024-10-18 found 89 windows containing the high
+12/03/2025 14:10:52.641 - DEBUG - For 2024-10-18, found 51 windows containing the low
+12/03/2025 14:10:52.656 - DEBUG - For 2024-10-18, found 140 windows containing the low or high
+12/03/2025 14:10:52.657 - INFO - Computing EURUSD high and low windows for: 2024-10-21
+12/03/2025 14:10:52.657 - INFO - Trading day: 2024-10-21 16:00:00+07:00 to 2024-10-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.734 - DEBUG - For 2024-10-21 found 86 windows containing the high
+12/03/2025 14:10:52.736 - DEBUG - For 2024-10-21, found 119 windows containing the low
+12/03/2025 14:10:52.736 - DEBUG - For 2024-10-21, found 205 windows containing the low or high
+12/03/2025 14:10:52.738 - INFO - Computing EURUSD high and low windows for: 2024-10-22
+12/03/2025 14:10:52.738 - INFO - Trading day: 2024-10-22 16:00:00+07:00 to 2024-10-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.815 - DEBUG - For 2024-10-22 found 28 windows containing the high
+12/03/2025 14:10:52.815 - DEBUG - For 2024-10-22, found 107 windows containing the low
+12/03/2025 14:10:52.817 - DEBUG - For 2024-10-22, found 135 windows containing the low or high
+12/03/2025 14:10:52.817 - INFO - Computing EURUSD high and low windows for: 2024-10-23
+12/03/2025 14:10:52.817 - INFO - Trading day: 2024-10-23 16:00:00+07:00 to 2024-10-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.895 - DEBUG - For 2024-10-23 found 5 windows containing the high
+12/03/2025 14:10:52.895 - DEBUG - For 2024-10-23, found 26 windows containing the low
+12/03/2025 14:10:52.896 - DEBUG - For 2024-10-23, found 31 windows containing the low or high
+12/03/2025 14:10:52.896 - INFO - Computing EURUSD high and low windows for: 2024-10-24
+12/03/2025 14:10:52.897 - INFO - Trading day: 2024-10-24 16:00:00+07:00 to 2024-10-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:52.958 - DEBUG - For 2024-10-24 found 123 windows containing the high
+12/03/2025 14:10:52.958 - DEBUG - For 2024-10-24, found 19 windows containing the low
+12/03/2025 14:10:52.958 - DEBUG - For 2024-10-24, found 142 windows containing the low or high
+12/03/2025 14:10:52.958 - INFO - Computing EURUSD high and low windows for: 2024-10-25
+12/03/2025 14:10:52.958 - INFO - Trading day: 2024-10-25 16:00:00+07:00 to 2024-10-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.024 - DEBUG - For 2024-10-25 found 70 windows containing the high
+12/03/2025 14:10:53.024 - DEBUG - For 2024-10-25, found 40 windows containing the low
+12/03/2025 14:10:53.024 - DEBUG - For 2024-10-25, found 110 windows containing the low or high
+12/03/2025 14:10:53.024 - INFO - Computing EURUSD high and low windows for: 2024-10-28
+12/03/2025 14:10:53.024 - INFO - Trading day: 2024-10-28 16:00:00+07:00 to 2024-10-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.097 - DEBUG - For 2024-10-28 found 67 windows containing the high
+12/03/2025 14:10:53.097 - DEBUG - For 2024-10-28, found 10 windows containing the low
+12/03/2025 14:10:53.097 - DEBUG - For 2024-10-28, found 77 windows containing the low or high
+12/03/2025 14:10:53.097 - INFO - Computing EURUSD high and low windows for: 2024-10-29
+12/03/2025 14:10:53.097 - INFO - Trading day: 2024-10-29 16:00:00+07:00 to 2024-10-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.158 - DEBUG - For 2024-10-29 found 96 windows containing the high
+12/03/2025 14:10:53.158 - DEBUG - For 2024-10-29, found 25 windows containing the low
+12/03/2025 14:10:53.158 - DEBUG - For 2024-10-29, found 121 windows containing the low or high
+12/03/2025 14:10:53.158 - INFO - Computing EURUSD high and low windows for: 2024-10-30
+12/03/2025 14:10:53.158 - INFO - Trading day: 2024-10-30 16:00:00+07:00 to 2024-10-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.245 - DEBUG - For 2024-10-30 found 55 windows containing the high
+12/03/2025 14:10:53.247 - DEBUG - For 2024-10-30, found 31 windows containing the low
+12/03/2025 14:10:53.248 - DEBUG - For 2024-10-30, found 86 windows containing the low or high
+12/03/2025 14:10:53.249 - INFO - Computing EURUSD high and low windows for: 2024-10-31
+12/03/2025 14:10:53.249 - INFO - Trading day: 2024-10-31 16:00:00+07:00 to 2024-11-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.311 - DEBUG - For 2024-10-31 found 112 windows containing the high
+12/03/2025 14:10:53.312 - DEBUG - For 2024-10-31, found 62 windows containing the low
+12/03/2025 14:10:53.312 - DEBUG - For 2024-10-31, found 160 windows containing the low or high
+12/03/2025 14:10:53.313 - INFO - Computing EURUSD high and low windows for: 2024-11-01
+12/03/2025 14:10:53.313 - INFO - Trading day: 2024-11-01 16:00:00+07:00 to 2024-11-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.382 - DEBUG - For 2024-11-01 found 22 windows containing the high
+12/03/2025 14:10:53.383 - DEBUG - For 2024-11-01, found 58 windows containing the low
+12/03/2025 14:10:53.384 - DEBUG - For 2024-11-01, found 80 windows containing the low or high
+12/03/2025 14:10:53.384 - INFO - Computing EURUSD high and low windows for: 2024-11-04
+12/03/2025 14:10:53.384 - INFO - Trading day: 2024-11-04 16:00:00+07:00 to 2024-11-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.462 - DEBUG - For 2024-11-04 found 42 windows containing the high
+12/03/2025 14:10:53.462 - DEBUG - For 2024-11-04, found 133 windows containing the low
+12/03/2025 14:10:53.462 - DEBUG - For 2024-11-04, found 175 windows containing the low or high
+12/03/2025 14:10:53.462 - INFO - Computing EURUSD high and low windows for: 2024-11-05
+12/03/2025 14:10:53.462 - INFO - Trading day: 2024-11-05 16:00:00+07:00 to 2024-11-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.544 - DEBUG - For 2024-11-05 found 62 windows containing the high
+12/03/2025 14:10:53.544 - DEBUG - For 2024-11-05, found 5 windows containing the low
+12/03/2025 14:10:53.545 - DEBUG - For 2024-11-05, found 67 windows containing the low or high
+12/03/2025 14:10:53.545 - INFO - Computing EURUSD high and low windows for: 2024-11-06
+12/03/2025 14:10:53.546 - INFO - Trading day: 2024-11-06 16:00:00+07:00 to 2024-11-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.611 - DEBUG - For 2024-11-06 found 20 windows containing the high
+12/03/2025 14:10:53.611 - DEBUG - For 2024-11-06, found 26 windows containing the low
+12/03/2025 14:10:53.612 - DEBUG - For 2024-11-06, found 46 windows containing the low or high
+12/03/2025 14:10:53.612 - INFO - Computing EURUSD high and low windows for: 2024-11-07
+12/03/2025 14:10:53.612 - INFO - Trading day: 2024-11-07 16:00:00+07:00 to 2024-11-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.681 - DEBUG - For 2024-11-07 found 21 windows containing the high
+12/03/2025 14:10:53.681 - DEBUG - For 2024-11-07, found 35 windows containing the low
+12/03/2025 14:10:53.690 - DEBUG - For 2024-11-07, found 56 windows containing the low or high
+12/03/2025 14:10:53.690 - INFO - Computing EURUSD high and low windows for: 2024-11-08
+12/03/2025 14:10:53.691 - INFO - Trading day: 2024-11-08 16:00:00+07:00 to 2024-11-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.761 - DEBUG - For 2024-11-08 found 23 windows containing the high
+12/03/2025 14:10:53.761 - DEBUG - For 2024-11-08, found 21 windows containing the low
+12/03/2025 14:10:53.761 - DEBUG - For 2024-11-08, found 44 windows containing the low or high
+12/03/2025 14:10:53.761 - INFO - Computing EURUSD high and low windows for: 2024-11-11
+12/03/2025 14:10:53.761 - INFO - Trading day: 2024-11-11 16:00:00+07:00 to 2024-11-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.827 - DEBUG - For 2024-11-11 found 4 windows containing the high
+12/03/2025 14:10:53.827 - DEBUG - For 2024-11-11, found 29 windows containing the low
+12/03/2025 14:10:53.839 - DEBUG - For 2024-11-11, found 33 windows containing the low or high
+12/03/2025 14:10:53.840 - INFO - Computing EURUSD high and low windows for: 2024-11-12
+12/03/2025 14:10:53.840 - INFO - Trading day: 2024-11-12 16:00:00+07:00 to 2024-11-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:53.915 - DEBUG - For 2024-11-12 found 26 windows containing the high
+12/03/2025 14:10:53.916 - DEBUG - For 2024-11-12, found 32 windows containing the low
+12/03/2025 14:10:53.917 - DEBUG - For 2024-11-12, found 58 windows containing the low or high
+12/03/2025 14:10:53.917 - INFO - Computing EURUSD high and low windows for: 2024-11-13
+12/03/2025 14:10:53.917 - INFO - Trading day: 2024-11-13 16:00:00+07:00 to 2024-11-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.010 - DEBUG - For 2024-11-13 found 20 windows containing the high
+12/03/2025 14:10:54.010 - DEBUG - For 2024-11-13, found 22 windows containing the low
+12/03/2025 14:10:54.011 - DEBUG - For 2024-11-13, found 42 windows containing the low or high
+12/03/2025 14:10:54.011 - INFO - Computing EURUSD high and low windows for: 2024-11-14
+12/03/2025 14:10:54.012 - INFO - Trading day: 2024-11-14 16:00:00+07:00 to 2024-11-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.098 - DEBUG - For 2024-11-14 found 25 windows containing the high
+12/03/2025 14:10:54.098 - DEBUG - For 2024-11-14, found 20 windows containing the low
+12/03/2025 14:10:54.098 - DEBUG - For 2024-11-14, found 45 windows containing the low or high
+12/03/2025 14:10:54.098 - INFO - Computing EURUSD high and low windows for: 2024-11-15
+12/03/2025 14:10:54.098 - INFO - Trading day: 2024-11-15 16:00:00+07:00 to 2024-11-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.163 - DEBUG - For 2024-11-15 found 23 windows containing the high
+12/03/2025 14:10:54.164 - DEBUG - For 2024-11-15, found 21 windows containing the low
+12/03/2025 14:10:54.164 - DEBUG - For 2024-11-15, found 44 windows containing the low or high
+12/03/2025 14:10:54.165 - INFO - Computing EURUSD high and low windows for: 2024-11-18
+12/03/2025 14:10:54.165 - INFO - Trading day: 2024-11-18 16:00:00+07:00 to 2024-11-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.225 - DEBUG - For 2024-11-18 found 21 windows containing the high
+12/03/2025 14:10:54.225 - DEBUG - For 2024-11-18, found 36 windows containing the low
+12/03/2025 14:10:54.225 - DEBUG - For 2024-11-18, found 57 windows containing the low or high
+12/03/2025 14:10:54.225 - INFO - Computing EURUSD high and low windows for: 2024-11-19
+12/03/2025 14:10:54.225 - INFO - Trading day: 2024-11-19 16:00:00+07:00 to 2024-11-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.323 - DEBUG - For 2024-11-19 found 34 windows containing the high
+12/03/2025 14:10:54.323 - DEBUG - For 2024-11-19, found 19 windows containing the low
+12/03/2025 14:10:54.323 - DEBUG - For 2024-11-19, found 53 windows containing the low or high
+12/03/2025 14:10:54.323 - INFO - Computing EURUSD high and low windows for: 2024-11-20
+12/03/2025 14:10:54.323 - INFO - Trading day: 2024-11-20 16:00:00+07:00 to 2024-11-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.415 - DEBUG - For 2024-11-20 found 6 windows containing the high
+12/03/2025 14:10:54.418 - DEBUG - For 2024-11-20, found 24 windows containing the low
+12/03/2025 14:10:54.419 - DEBUG - For 2024-11-20, found 30 windows containing the low or high
+12/03/2025 14:10:54.420 - INFO - Computing EURUSD high and low windows for: 2024-11-21
+12/03/2025 14:10:54.430 - INFO - Trading day: 2024-11-21 16:00:00+07:00 to 2024-11-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.561 - DEBUG - For 2024-11-21 found 41 windows containing the high
+12/03/2025 14:10:54.561 - DEBUG - For 2024-11-21, found 63 windows containing the low
+12/03/2025 14:10:54.561 - DEBUG - For 2024-11-21, found 104 windows containing the low or high
+12/03/2025 14:10:54.561 - INFO - Computing EURUSD high and low windows for: 2024-11-22
+12/03/2025 14:10:54.561 - INFO - Trading day: 2024-11-22 16:00:00+07:00 to 2024-11-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.625 - DEBUG - For 2024-11-22 found 15 windows containing the high
+12/03/2025 14:10:54.628 - DEBUG - For 2024-11-22, found 19 windows containing the low
+12/03/2025 14:10:54.628 - DEBUG - For 2024-11-22, found 27 windows containing the low or high
+12/03/2025 14:10:54.628 - INFO - Computing EURUSD high and low windows for: 2024-11-25
+12/03/2025 14:10:54.628 - INFO - Trading day: 2024-11-25 16:00:00+07:00 to 2024-11-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.700 - DEBUG - For 2024-11-25 found 32 windows containing the high
+12/03/2025 14:10:54.700 - DEBUG - For 2024-11-25, found 19 windows containing the low
+12/03/2025 14:10:54.700 - DEBUG - For 2024-11-25, found 51 windows containing the low or high
+12/03/2025 14:10:54.700 - INFO - Computing EURUSD high and low windows for: 2024-11-26
+12/03/2025 14:10:54.700 - INFO - Trading day: 2024-11-26 16:00:00+07:00 to 2024-11-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.792 - DEBUG - For 2024-11-26 found 24 windows containing the high
+12/03/2025 14:10:54.792 - DEBUG - For 2024-11-26, found 33 windows containing the low
+12/03/2025 14:10:54.792 - DEBUG - For 2024-11-26, found 57 windows containing the low or high
+12/03/2025 14:10:54.792 - INFO - Computing EURUSD high and low windows for: 2024-11-27
+12/03/2025 14:10:54.792 - INFO - Trading day: 2024-11-27 16:00:00+07:00 to 2024-11-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.859 - DEBUG - For 2024-11-27 found 27 windows containing the high
+12/03/2025 14:10:54.859 - DEBUG - For 2024-11-27, found 4 windows containing the low
+12/03/2025 14:10:54.859 - DEBUG - For 2024-11-27, found 31 windows containing the low or high
+12/03/2025 14:10:54.859 - INFO - Computing EURUSD high and low windows for: 2024-11-28
+12/03/2025 14:10:54.859 - INFO - Trading day: 2024-11-28 16:00:00+07:00 to 2024-11-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:54.944 - DEBUG - For 2024-11-28 found 34 windows containing the high
+12/03/2025 14:10:54.944 - DEBUG - For 2024-11-28, found 65 windows containing the low
+12/03/2025 14:10:54.944 - DEBUG - For 2024-11-28, found 99 windows containing the low or high
+12/03/2025 14:10:54.944 - INFO - Computing EURUSD high and low windows for: 2024-11-29
+12/03/2025 14:10:54.957 - INFO - Trading day: 2024-11-29 16:00:00+07:00 to 2024-11-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.024 - DEBUG - For 2024-11-29 found 7 windows containing the high
+12/03/2025 14:10:55.024 - DEBUG - For 2024-11-29, found 59 windows containing the low
+12/03/2025 14:10:55.024 - DEBUG - For 2024-11-29, found 66 windows containing the low or high
+12/03/2025 14:10:55.024 - INFO - Computing EURUSD high and low windows for: 2024-12-02
+12/03/2025 14:10:55.024 - INFO - Trading day: 2024-12-02 16:00:00+07:00 to 2024-12-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.118 - DEBUG - For 2024-12-02 found 21 windows containing the high
+12/03/2025 14:10:55.120 - DEBUG - For 2024-12-02, found 33 windows containing the low
+12/03/2025 14:10:55.121 - DEBUG - For 2024-12-02, found 54 windows containing the low or high
+12/03/2025 14:10:55.121 - INFO - Computing EURUSD high and low windows for: 2024-12-03
+12/03/2025 14:10:55.122 - INFO - Trading day: 2024-12-03 16:00:00+07:00 to 2024-12-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.198 - DEBUG - For 2024-12-03 found 50 windows containing the high
+12/03/2025 14:10:55.200 - DEBUG - For 2024-12-03, found 28 windows containing the low
+12/03/2025 14:10:55.201 - DEBUG - For 2024-12-03, found 78 windows containing the low or high
+12/03/2025 14:10:55.202 - INFO - Computing EURUSD high and low windows for: 2024-12-04
+12/03/2025 14:10:55.202 - INFO - Trading day: 2024-12-04 16:00:00+07:00 to 2024-12-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.277 - DEBUG - For 2024-12-04 found 41 windows containing the high
+12/03/2025 14:10:55.278 - DEBUG - For 2024-12-04, found 21 windows containing the low
+12/03/2025 14:10:55.279 - DEBUG - For 2024-12-04, found 57 windows containing the low or high
+12/03/2025 14:10:55.279 - INFO - Computing EURUSD high and low windows for: 2024-12-05
+12/03/2025 14:10:55.279 - INFO - Trading day: 2024-12-05 16:00:00+07:00 to 2024-12-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.357 - DEBUG - For 2024-12-05 found 94 windows containing the high
+12/03/2025 14:10:55.357 - DEBUG - For 2024-12-05, found 66 windows containing the low
+12/03/2025 14:10:55.357 - DEBUG - For 2024-12-05, found 160 windows containing the low or high
+12/03/2025 14:10:55.357 - INFO - Computing EURUSD high and low windows for: 2024-12-06
+12/03/2025 14:10:55.357 - INFO - Trading day: 2024-12-06 16:00:00+07:00 to 2024-12-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.451 - DEBUG - For 2024-12-06 found 19 windows containing the high
+12/03/2025 14:10:55.451 - DEBUG - For 2024-12-06, found 62 windows containing the low
+12/03/2025 14:10:55.451 - DEBUG - For 2024-12-06, found 81 windows containing the low or high
+12/03/2025 14:10:55.451 - INFO - Computing EURUSD high and low windows for: 2024-12-09
+12/03/2025 14:10:55.451 - INFO - Trading day: 2024-12-09 16:00:00+07:00 to 2024-12-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.534 - DEBUG - For 2024-12-09 found 22 windows containing the high
+12/03/2025 14:10:55.542 - DEBUG - For 2024-12-09, found 23 windows containing the low
+12/03/2025 14:10:55.545 - DEBUG - For 2024-12-09, found 45 windows containing the low or high
+12/03/2025 14:10:55.545 - INFO - Computing EURUSD high and low windows for: 2024-12-10
+12/03/2025 14:10:55.545 - INFO - Trading day: 2024-12-10 16:00:00+07:00 to 2024-12-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.634 - DEBUG - For 2024-12-10 found 7 windows containing the high
+12/03/2025 14:10:55.634 - DEBUG - For 2024-12-10, found 34 windows containing the low
+12/03/2025 14:10:55.634 - DEBUG - For 2024-12-10, found 41 windows containing the low or high
+12/03/2025 14:10:55.634 - INFO - Computing EURUSD high and low windows for: 2024-12-11
+12/03/2025 14:10:55.634 - INFO - Trading day: 2024-12-11 16:00:00+07:00 to 2024-12-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.708 - DEBUG - For 2024-12-11 found 22 windows containing the high
+12/03/2025 14:10:55.708 - DEBUG - For 2024-12-11, found 50 windows containing the low
+12/03/2025 14:10:55.708 - DEBUG - For 2024-12-11, found 72 windows containing the low or high
+12/03/2025 14:10:55.708 - INFO - Computing EURUSD high and low windows for: 2024-12-12
+12/03/2025 14:10:55.708 - INFO - Trading day: 2024-12-12 16:00:00+07:00 to 2024-12-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.792 - DEBUG - For 2024-12-12 found 11 windows containing the high
+12/03/2025 14:10:55.792 - DEBUG - For 2024-12-12, found 51 windows containing the low
+12/03/2025 14:10:55.792 - DEBUG - For 2024-12-12, found 62 windows containing the low or high
+12/03/2025 14:10:55.792 - INFO - Computing EURUSD high and low windows for: 2024-12-13
+12/03/2025 14:10:55.792 - INFO - Trading day: 2024-12-13 16:00:00+07:00 to 2024-12-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.893 - DEBUG - For 2024-12-13 found 32 windows containing the high
+12/03/2025 14:10:55.896 - DEBUG - For 2024-12-13, found 13 windows containing the low
+12/03/2025 14:10:55.896 - DEBUG - For 2024-12-13, found 45 windows containing the low or high
+12/03/2025 14:10:55.896 - INFO - Computing EURUSD high and low windows for: 2024-12-16
+12/03/2025 14:10:55.896 - INFO - Trading day: 2024-12-16 16:00:00+07:00 to 2024-12-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:55.978 - DEBUG - For 2024-12-16 found 21 windows containing the high
+12/03/2025 14:10:55.978 - DEBUG - For 2024-12-16, found 20 windows containing the low
+12/03/2025 14:10:55.978 - DEBUG - For 2024-12-16, found 41 windows containing the low or high
+12/03/2025 14:10:55.978 - INFO - Computing EURUSD high and low windows for: 2024-12-17
+12/03/2025 14:10:55.978 - INFO - Trading day: 2024-12-17 16:00:00+07:00 to 2024-12-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.061 - DEBUG - For 2024-12-17 found 43 windows containing the high
+12/03/2025 14:10:56.061 - DEBUG - For 2024-12-17, found 45 windows containing the low
+12/03/2025 14:10:56.061 - DEBUG - For 2024-12-17, found 88 windows containing the low or high
+12/03/2025 14:10:56.061 - INFO - Computing EURUSD high and low windows for: 2024-12-18
+12/03/2025 14:10:56.061 - INFO - Trading day: 2024-12-18 16:00:00+07:00 to 2024-12-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.145 - DEBUG - For 2024-12-18 found 7 windows containing the high
+12/03/2025 14:10:56.146 - DEBUG - For 2024-12-18, found 61 windows containing the low
+12/03/2025 14:10:56.147 - DEBUG - For 2024-12-18, found 68 windows containing the low or high
+12/03/2025 14:10:56.147 - INFO - Computing EURUSD high and low windows for: 2024-12-19
+12/03/2025 14:10:56.148 - INFO - Trading day: 2024-12-19 16:00:00+07:00 to 2024-12-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.224 - DEBUG - For 2024-12-19 found 28 windows containing the high
+12/03/2025 14:10:56.239 - DEBUG - For 2024-12-19, found 11 windows containing the low
+12/03/2025 14:10:56.240 - DEBUG - For 2024-12-19, found 39 windows containing the low or high
+12/03/2025 14:10:56.241 - INFO - Computing EURUSD high and low windows for: 2024-12-20
+12/03/2025 14:10:56.241 - INFO - Trading day: 2024-12-20 16:00:00+07:00 to 2024-12-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.334 - DEBUG - For 2024-12-20 found 59 windows containing the high
+12/03/2025 14:10:56.335 - DEBUG - For 2024-12-20, found 29 windows containing the low
+12/03/2025 14:10:56.337 - DEBUG - For 2024-12-20, found 88 windows containing the low or high
+12/03/2025 14:10:56.337 - INFO - Computing EURUSD high and low windows for: 2024-12-23
+12/03/2025 14:10:56.338 - INFO - Trading day: 2024-12-23 16:00:00+07:00 to 2024-12-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.407 - DEBUG - For 2024-12-23 found 7 windows containing the high
+12/03/2025 14:10:56.407 - DEBUG - For 2024-12-23, found 97 windows containing the low
+12/03/2025 14:10:56.407 - DEBUG - For 2024-12-23, found 104 windows containing the low or high
+12/03/2025 14:10:56.422 - INFO - Computing EURUSD high and low windows for: 2024-12-24
+12/03/2025 14:10:56.423 - INFO - Trading day: 2024-12-24 16:00:00+07:00 to 2024-12-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.491 - DEBUG - For 2024-12-24 found 47 windows containing the high
+12/03/2025 14:10:56.491 - DEBUG - For 2024-12-24, found 86 windows containing the low
+12/03/2025 14:10:56.491 - DEBUG - For 2024-12-24, found 126 windows containing the low or high
+12/03/2025 14:10:56.491 - INFO - Computing EURUSD high and low windows for: 2024-12-25
+12/03/2025 14:10:56.491 - INFO - Trading day: 2024-12-25 16:00:00+07:00 to 2024-12-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.575 - DEBUG - For 2024-12-25 found 109 windows containing the high
+12/03/2025 14:10:56.575 - DEBUG - For 2024-12-25, found 102 windows containing the low
+12/03/2025 14:10:56.575 - DEBUG - For 2024-12-25, found 109 windows containing the low or high
+12/03/2025 14:10:56.575 - INFO - Computing EURUSD high and low windows for: 2024-12-26
+12/03/2025 14:10:56.575 - INFO - Trading day: 2024-12-26 16:00:00+07:00 to 2024-12-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.641 - DEBUG - For 2024-12-26 found 23 windows containing the high
+12/03/2025 14:10:56.641 - DEBUG - For 2024-12-26, found 78 windows containing the low
+12/03/2025 14:10:56.641 - DEBUG - For 2024-12-26, found 101 windows containing the low or high
+12/03/2025 14:10:56.641 - INFO - Computing EURUSD high and low windows for: 2024-12-27
+12/03/2025 14:10:56.641 - INFO - Trading day: 2024-12-27 16:00:00+07:00 to 2024-12-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.722 - DEBUG - For 2024-12-27 found 44 windows containing the high
+12/03/2025 14:10:56.723 - DEBUG - For 2024-12-27, found 26 windows containing the low
+12/03/2025 14:10:56.723 - DEBUG - For 2024-12-27, found 70 windows containing the low or high
+12/03/2025 14:10:56.723 - INFO - Computing EURUSD high and low windows for: 2024-12-30
+12/03/2025 14:10:56.723 - INFO - Trading day: 2024-12-30 16:00:00+07:00 to 2024-12-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.806 - DEBUG - For 2024-12-30 found 21 windows containing the high
+12/03/2025 14:10:56.806 - DEBUG - For 2024-12-30, found 27 windows containing the low
+12/03/2025 14:10:56.806 - DEBUG - For 2024-12-30, found 48 windows containing the low or high
+12/03/2025 14:10:56.813 - INFO - Computing EURUSD high and low windows for: 2024-12-31
+12/03/2025 14:10:56.813 - INFO - Trading day: 2024-12-31 16:00:00+07:00 to 2025-01-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.890 - DEBUG - For 2024-12-31 found 42 windows containing the high
+12/03/2025 14:10:56.890 - DEBUG - For 2024-12-31, found 46 windows containing the low
+12/03/2025 14:10:56.892 - DEBUG - For 2024-12-31, found 88 windows containing the low or high
+12/03/2025 14:10:56.892 - INFO - Computing EURUSD high and low windows for: 2025-01-01
+12/03/2025 14:10:56.892 - INFO - Trading day: 2025-01-01 16:00:00+07:00 to 2025-01-02 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:56.974 - DEBUG - For 2025-01-01 found 38 windows containing the high
+12/03/2025 14:10:56.974 - DEBUG - For 2025-01-01, found 60 windows containing the low
+12/03/2025 14:10:56.974 - DEBUG - For 2025-01-01, found 96 windows containing the low or high
+12/03/2025 14:10:56.974 - INFO - Computing EURUSD high and low windows for: 2025-01-02
+12/03/2025 14:10:56.974 - INFO - Trading day: 2025-01-02 16:00:00+07:00 to 2025-01-03 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.061 - DEBUG - For 2025-01-02 found 29 windows containing the high
+12/03/2025 14:10:57.061 - DEBUG - For 2025-01-02, found 19 windows containing the low
+12/03/2025 14:10:57.061 - DEBUG - For 2025-01-02, found 48 windows containing the low or high
+12/03/2025 14:10:57.061 - INFO - Computing EURUSD high and low windows for: 2025-01-03
+12/03/2025 14:10:57.061 - INFO - Trading day: 2025-01-03 16:00:00+07:00 to 2025-01-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.139 - DEBUG - For 2025-01-03 found 85 windows containing the high
+12/03/2025 14:10:57.141 - DEBUG - For 2025-01-03, found 41 windows containing the low
+12/03/2025 14:10:57.141 - DEBUG - For 2025-01-03, found 111 windows containing the low or high
+12/03/2025 14:10:57.141 - INFO - Computing EURUSD high and low windows for: 2025-01-06
+12/03/2025 14:10:57.141 - INFO - Trading day: 2025-01-06 16:00:00+07:00 to 2025-01-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.208 - DEBUG - For 2025-01-06 found 39 windows containing the high
+12/03/2025 14:10:57.208 - DEBUG - For 2025-01-06, found 5 windows containing the low
+12/03/2025 14:10:57.208 - DEBUG - For 2025-01-06, found 44 windows containing the low or high
+12/03/2025 14:10:57.208 - INFO - Computing EURUSD high and low windows for: 2025-01-07
+12/03/2025 14:10:57.208 - INFO - Trading day: 2025-01-07 16:00:00+07:00 to 2025-01-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.307 - DEBUG - For 2025-01-07 found 31 windows containing the high
+12/03/2025 14:10:57.307 - DEBUG - For 2025-01-07, found 53 windows containing the low
+12/03/2025 14:10:57.307 - DEBUG - For 2025-01-07, found 84 windows containing the low or high
+12/03/2025 14:10:57.307 - INFO - Computing EURUSD high and low windows for: 2025-01-08
+12/03/2025 14:10:57.307 - INFO - Trading day: 2025-01-08 16:00:00+07:00 to 2025-01-09 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.375 - DEBUG - For 2025-01-08 found 5 windows containing the high
+12/03/2025 14:10:57.375 - DEBUG - For 2025-01-08, found 20 windows containing the low
+12/03/2025 14:10:57.386 - DEBUG - For 2025-01-08, found 25 windows containing the low or high
+12/03/2025 14:10:57.387 - INFO - Computing EURUSD high and low windows for: 2025-01-09
+12/03/2025 14:10:57.388 - INFO - Trading day: 2025-01-09 16:00:00+07:00 to 2025-01-10 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.444 - DEBUG - For 2025-01-09 found 52 windows containing the high
+12/03/2025 14:10:57.457 - DEBUG - For 2025-01-09, found 28 windows containing the low
+12/03/2025 14:10:57.458 - DEBUG - For 2025-01-09, found 75 windows containing the low or high
+12/03/2025 14:10:57.458 - INFO - Computing EURUSD high and low windows for: 2025-01-10
+12/03/2025 14:10:57.458 - INFO - Trading day: 2025-01-10 16:00:00+07:00 to 2025-01-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.528 - DEBUG - For 2025-01-10 found 53 windows containing the high
+12/03/2025 14:10:57.528 - DEBUG - For 2025-01-10, found 19 windows containing the low
+12/03/2025 14:10:57.528 - DEBUG - For 2025-01-10, found 54 windows containing the low or high
+12/03/2025 14:10:57.528 - INFO - Computing EURUSD high and low windows for: 2025-01-13
+12/03/2025 14:10:57.528 - INFO - Trading day: 2025-01-13 16:00:00+07:00 to 2025-01-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.595 - DEBUG - For 2025-01-13 found 22 windows containing the high
+12/03/2025 14:10:57.595 - DEBUG - For 2025-01-13, found 20 windows containing the low
+12/03/2025 14:10:57.595 - DEBUG - For 2025-01-13, found 42 windows containing the low or high
+12/03/2025 14:10:57.595 - INFO - Computing EURUSD high and low windows for: 2025-01-14
+12/03/2025 14:10:57.595 - INFO - Trading day: 2025-01-14 16:00:00+07:00 to 2025-01-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.675 - DEBUG - For 2025-01-14 found 127 windows containing the high
+12/03/2025 14:10:57.675 - DEBUG - For 2025-01-14, found 42 windows containing the low
+12/03/2025 14:10:57.677 - DEBUG - For 2025-01-14, found 169 windows containing the low or high
+12/03/2025 14:10:57.678 - INFO - Computing EURUSD high and low windows for: 2025-01-15
+12/03/2025 14:10:57.678 - INFO - Trading day: 2025-01-15 16:00:00+07:00 to 2025-01-16 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.740 - DEBUG - For 2025-01-15 found 24 windows containing the high
+12/03/2025 14:10:57.740 - DEBUG - For 2025-01-15, found 19 windows containing the low
+12/03/2025 14:10:57.740 - DEBUG - For 2025-01-15, found 43 windows containing the low or high
+12/03/2025 14:10:57.740 - INFO - Computing EURUSD high and low windows for: 2025-01-16
+12/03/2025 14:10:57.740 - INFO - Trading day: 2025-01-16 16:00:00+07:00 to 2025-01-17 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.818 - DEBUG - For 2025-01-16 found 38 windows containing the high
+12/03/2025 14:10:57.818 - DEBUG - For 2025-01-16, found 29 windows containing the low
+12/03/2025 14:10:57.818 - DEBUG - For 2025-01-16, found 67 windows containing the low or high
+12/03/2025 14:10:57.818 - INFO - Computing EURUSD high and low windows for: 2025-01-17
+12/03/2025 14:10:57.818 - INFO - Trading day: 2025-01-17 16:00:00+07:00 to 2025-01-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.890 - DEBUG - For 2025-01-17 found 20 windows containing the high
+12/03/2025 14:10:57.894 - DEBUG - For 2025-01-17, found 49 windows containing the low
+12/03/2025 14:10:57.894 - DEBUG - For 2025-01-17, found 58 windows containing the low or high
+12/03/2025 14:10:57.894 - INFO - Computing EURUSD high and low windows for: 2025-01-20
+12/03/2025 14:10:57.894 - INFO - Trading day: 2025-01-20 16:00:00+07:00 to 2025-01-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:57.957 - DEBUG - For 2025-01-20 found 70 windows containing the high
+12/03/2025 14:10:57.957 - DEBUG - For 2025-01-20, found 56 windows containing the low
+12/03/2025 14:10:57.957 - DEBUG - For 2025-01-20, found 121 windows containing the low or high
+12/03/2025 14:10:57.957 - INFO - Computing EURUSD high and low windows for: 2025-01-21
+12/03/2025 14:10:57.957 - INFO - Trading day: 2025-01-21 16:00:00+07:00 to 2025-01-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.042 - DEBUG - For 2025-01-21 found 44 windows containing the high
+12/03/2025 14:10:58.043 - DEBUG - For 2025-01-21, found 58 windows containing the low
+12/03/2025 14:10:58.044 - DEBUG - For 2025-01-21, found 102 windows containing the low or high
+12/03/2025 14:10:58.044 - INFO - Computing EURUSD high and low windows for: 2025-01-22
+12/03/2025 14:10:58.045 - INFO - Trading day: 2025-01-22 16:00:00+07:00 to 2025-01-23 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.138 - DEBUG - For 2025-01-22 found 34 windows containing the high
+12/03/2025 14:10:58.139 - DEBUG - For 2025-01-22, found 30 windows containing the low
+12/03/2025 14:10:58.140 - DEBUG - For 2025-01-22, found 64 windows containing the low or high
+12/03/2025 14:10:58.140 - INFO - Computing EURUSD high and low windows for: 2025-01-23
+12/03/2025 14:10:58.141 - INFO - Trading day: 2025-01-23 16:00:00+07:00 to 2025-01-24 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.207 - DEBUG - For 2025-01-23 found 6 windows containing the high
+12/03/2025 14:10:58.207 - DEBUG - For 2025-01-23, found 19 windows containing the low
+12/03/2025 14:10:58.207 - DEBUG - For 2025-01-23, found 25 windows containing the low or high
+12/03/2025 14:10:58.207 - INFO - Computing EURUSD high and low windows for: 2025-01-24
+12/03/2025 14:10:58.207 - INFO - Trading day: 2025-01-24 16:00:00+07:00 to 2025-01-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.291 - DEBUG - For 2025-01-24 found 41 windows containing the high
+12/03/2025 14:10:58.291 - DEBUG - For 2025-01-24, found 9 windows containing the low
+12/03/2025 14:10:58.291 - DEBUG - For 2025-01-24, found 50 windows containing the low or high
+12/03/2025 14:10:58.291 - INFO - Computing EURUSD high and low windows for: 2025-01-27
+12/03/2025 14:10:58.291 - INFO - Trading day: 2025-01-27 16:00:00+07:00 to 2025-01-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.383 - DEBUG - For 2025-01-27 found 31 windows containing the high
+12/03/2025 14:10:58.383 - DEBUG - For 2025-01-27, found 73 windows containing the low
+12/03/2025 14:10:58.383 - DEBUG - For 2025-01-27, found 104 windows containing the low or high
+12/03/2025 14:10:58.383 - INFO - Computing EURUSD high and low windows for: 2025-01-28
+12/03/2025 14:10:58.383 - INFO - Trading day: 2025-01-28 16:00:00+07:00 to 2025-01-29 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.458 - DEBUG - For 2025-01-28 found 97 windows containing the high
+12/03/2025 14:10:58.458 - DEBUG - For 2025-01-28, found 32 windows containing the low
+12/03/2025 14:10:58.458 - DEBUG - For 2025-01-28, found 128 windows containing the low or high
+12/03/2025 14:10:58.458 - INFO - Computing EURUSD high and low windows for: 2025-01-29
+12/03/2025 14:10:58.458 - INFO - Trading day: 2025-01-29 16:00:00+07:00 to 2025-01-30 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.525 - DEBUG - For 2025-01-29 found 5 windows containing the high
+12/03/2025 14:10:58.541 - DEBUG - For 2025-01-29, found 28 windows containing the low
+12/03/2025 14:10:58.541 - DEBUG - For 2025-01-29, found 33 windows containing the low or high
+12/03/2025 14:10:58.541 - INFO - Computing EURUSD high and low windows for: 2025-01-30
+12/03/2025 14:10:58.541 - INFO - Trading day: 2025-01-30 16:00:00+07:00 to 2025-01-31 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.643 - DEBUG - For 2025-01-30 found 19 windows containing the high
+12/03/2025 14:10:58.645 - DEBUG - For 2025-01-30, found 38 windows containing the low
+12/03/2025 14:10:58.645 - DEBUG - For 2025-01-30, found 57 windows containing the low or high
+12/03/2025 14:10:58.645 - INFO - Computing EURUSD high and low windows for: 2025-01-31
+12/03/2025 14:10:58.645 - INFO - Trading day: 2025-01-31 16:00:00+07:00 to 2025-02-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.726 - DEBUG - For 2025-01-31 found 23 windows containing the high
+12/03/2025 14:10:58.726 - DEBUG - For 2025-01-31, found 20 windows containing the low
+12/03/2025 14:10:58.726 - DEBUG - For 2025-01-31, found 43 windows containing the low or high
+12/03/2025 14:10:58.726 - INFO - Computing EURUSD high and low windows for: 2025-02-03
+12/03/2025 14:10:58.726 - INFO - Trading day: 2025-02-03 16:00:00+07:00 to 2025-02-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.793 - DEBUG - For 2025-02-03 found 38 windows containing the high
+12/03/2025 14:10:58.793 - DEBUG - For 2025-02-03, found 15 windows containing the low
+12/03/2025 14:10:58.793 - DEBUG - For 2025-02-03, found 53 windows containing the low or high
+12/03/2025 14:10:58.793 - INFO - Computing EURUSD high and low windows for: 2025-02-04
+12/03/2025 14:10:58.793 - INFO - Trading day: 2025-02-04 16:00:00+07:00 to 2025-02-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.876 - DEBUG - For 2025-02-04 found 9 windows containing the high
+12/03/2025 14:10:58.876 - DEBUG - For 2025-02-04, found 6 windows containing the low
+12/03/2025 14:10:58.876 - DEBUG - For 2025-02-04, found 15 windows containing the low or high
+12/03/2025 14:10:58.876 - INFO - Computing EURUSD high and low windows for: 2025-02-05
+12/03/2025 14:10:58.876 - INFO - Trading day: 2025-02-05 16:00:00+07:00 to 2025-02-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:58.945 - DEBUG - For 2025-02-05 found 19 windows containing the high
+12/03/2025 14:10:58.945 - DEBUG - For 2025-02-05, found 31 windows containing the low
+12/03/2025 14:10:58.945 - DEBUG - For 2025-02-05, found 50 windows containing the low or high
+12/03/2025 14:10:58.956 - INFO - Computing EURUSD high and low windows for: 2025-02-06
+12/03/2025 14:10:58.957 - INFO - Trading day: 2025-02-06 16:00:00+07:00 to 2025-02-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.061 - DEBUG - For 2025-02-06 found 26 windows containing the high
+12/03/2025 14:10:59.062 - DEBUG - For 2025-02-06, found 81 windows containing the low
+12/03/2025 14:10:59.063 - DEBUG - For 2025-02-06, found 105 windows containing the low or high
+12/03/2025 14:10:59.064 - INFO - Computing EURUSD high and low windows for: 2025-02-07
+12/03/2025 14:10:59.065 - INFO - Trading day: 2025-02-07 16:00:00+07:00 to 2025-02-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.143 - DEBUG - For 2025-02-07 found 19 windows containing the high
+12/03/2025 14:10:59.145 - DEBUG - For 2025-02-07, found 19 windows containing the low
+12/03/2025 14:10:59.145 - DEBUG - For 2025-02-07, found 38 windows containing the low or high
+12/03/2025 14:10:59.145 - INFO - Computing EURUSD high and low windows for: 2025-02-10
+12/03/2025 14:10:59.145 - INFO - Trading day: 2025-02-10 16:00:00+07:00 to 2025-02-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.211 - DEBUG - For 2025-02-10 found 48 windows containing the high
+12/03/2025 14:10:59.211 - DEBUG - For 2025-02-10, found 31 windows containing the low
+12/03/2025 14:10:59.211 - DEBUG - For 2025-02-10, found 79 windows containing the low or high
+12/03/2025 14:10:59.211 - INFO - Computing EURUSD high and low windows for: 2025-02-11
+12/03/2025 14:10:59.211 - INFO - Trading day: 2025-02-11 16:00:00+07:00 to 2025-02-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.274 - DEBUG - For 2025-02-11 found 19 windows containing the high
+12/03/2025 14:10:59.274 - DEBUG - For 2025-02-11, found 17 windows containing the low
+12/03/2025 14:10:59.274 - DEBUG - For 2025-02-11, found 36 windows containing the low or high
+12/03/2025 14:10:59.289 - INFO - Computing EURUSD high and low windows for: 2025-02-12
+12/03/2025 14:10:59.289 - INFO - Trading day: 2025-02-12 16:00:00+07:00 to 2025-02-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.375 - DEBUG - For 2025-02-12 found 30 windows containing the high
+12/03/2025 14:10:59.376 - DEBUG - For 2025-02-12, found 21 windows containing the low
+12/03/2025 14:10:59.377 - DEBUG - For 2025-02-12, found 51 windows containing the low or high
+12/03/2025 14:10:59.378 - INFO - Computing EURUSD high and low windows for: 2025-02-13
+12/03/2025 14:10:59.378 - INFO - Trading day: 2025-02-13 16:00:00+07:00 to 2025-02-14 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.441 - DEBUG - For 2025-02-13 found 101 windows containing the high
+12/03/2025 14:10:59.441 - DEBUG - For 2025-02-13, found 38 windows containing the low
+12/03/2025 14:10:59.441 - DEBUG - For 2025-02-13, found 139 windows containing the low or high
+12/03/2025 14:10:59.441 - INFO - Computing EURUSD high and low windows for: 2025-02-14
+12/03/2025 14:10:59.441 - INFO - Trading day: 2025-02-14 16:00:00+07:00 to 2025-02-15 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.521 - DEBUG - For 2025-02-14 found 36 windows containing the high
+12/03/2025 14:10:59.521 - DEBUG - For 2025-02-14, found 22 windows containing the low
+12/03/2025 14:10:59.523 - DEBUG - For 2025-02-14, found 58 windows containing the low or high
+12/03/2025 14:10:59.524 - INFO - Computing EURUSD high and low windows for: 2025-02-17
+12/03/2025 14:10:59.524 - INFO - Trading day: 2025-02-17 16:00:00+07:00 to 2025-02-18 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.610 - DEBUG - For 2025-02-17 found 7 windows containing the high
+12/03/2025 14:10:59.610 - DEBUG - For 2025-02-17, found 30 windows containing the low
+12/03/2025 14:10:59.611 - DEBUG - For 2025-02-17, found 37 windows containing the low or high
+12/03/2025 14:10:59.612 - INFO - Computing EURUSD high and low windows for: 2025-02-18
+12/03/2025 14:10:59.612 - INFO - Trading day: 2025-02-18 16:00:00+07:00 to 2025-02-19 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.688 - DEBUG - For 2025-02-18 found 84 windows containing the high
+12/03/2025 14:10:59.690 - DEBUG - For 2025-02-18, found 32 windows containing the low
+12/03/2025 14:10:59.691 - DEBUG - For 2025-02-18, found 116 windows containing the low or high
+12/03/2025 14:10:59.692 - INFO - Computing EURUSD high and low windows for: 2025-02-19
+12/03/2025 14:10:59.693 - INFO - Trading day: 2025-02-19 16:00:00+07:00 to 2025-02-20 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.741 - DEBUG - For 2025-02-19 found 16 windows containing the high
+12/03/2025 14:10:59.757 - DEBUG - For 2025-02-19, found 28 windows containing the low
+12/03/2025 14:10:59.758 - DEBUG - For 2025-02-19, found 44 windows containing the low or high
+12/03/2025 14:10:59.759 - INFO - Computing EURUSD high and low windows for: 2025-02-20
+12/03/2025 14:10:59.759 - INFO - Trading day: 2025-02-20 16:00:00+07:00 to 2025-02-21 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.831 - DEBUG - For 2025-02-20 found 112 windows containing the high
+12/03/2025 14:10:59.832 - DEBUG - For 2025-02-20, found 10 windows containing the low
+12/03/2025 14:10:59.833 - DEBUG - For 2025-02-20, found 122 windows containing the low or high
+12/03/2025 14:10:59.834 - INFO - Computing EURUSD high and low windows for: 2025-02-21
+12/03/2025 14:10:59.834 - INFO - Trading day: 2025-02-21 16:00:00+07:00 to 2025-02-22 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.911 - DEBUG - For 2025-02-21 found 12 windows containing the high
+12/03/2025 14:10:59.912 - DEBUG - For 2025-02-21, found 75 windows containing the low
+12/03/2025 14:10:59.913 - DEBUG - For 2025-02-21, found 87 windows containing the low or high
+12/03/2025 14:10:59.913 - INFO - Computing EURUSD high and low windows for: 2025-02-24
+12/03/2025 14:10:59.914 - INFO - Trading day: 2025-02-24 16:00:00+07:00 to 2025-02-25 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:10:59.974 - DEBUG - For 2025-02-24 found 4 windows containing the high
+12/03/2025 14:10:59.974 - DEBUG - For 2025-02-24, found 20 windows containing the low
+12/03/2025 14:10:59.974 - DEBUG - For 2025-02-24, found 24 windows containing the low or high
+12/03/2025 14:10:59.974 - INFO - Computing EURUSD high and low windows for: 2025-02-25
+12/03/2025 14:10:59.974 - INFO - Trading day: 2025-02-25 16:00:00+07:00 to 2025-02-26 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.046 - DEBUG - For 2025-02-25 found 46 windows containing the high
+12/03/2025 14:11:00.046 - DEBUG - For 2025-02-25, found 20 windows containing the low
+12/03/2025 14:11:00.046 - DEBUG - For 2025-02-25, found 66 windows containing the low or high
+12/03/2025 14:11:00.056 - INFO - Computing EURUSD high and low windows for: 2025-02-26
+12/03/2025 14:11:00.056 - INFO - Trading day: 2025-02-26 16:00:00+07:00 to 2025-02-27 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.124 - DEBUG - For 2025-02-26 found 20 windows containing the high
+12/03/2025 14:11:00.138 - DEBUG - For 2025-02-26, found 31 windows containing the low
+12/03/2025 14:11:00.139 - DEBUG - For 2025-02-26, found 51 windows containing the low or high
+12/03/2025 14:11:00.141 - INFO - Computing EURUSD high and low windows for: 2025-02-27
+12/03/2025 14:11:00.141 - INFO - Trading day: 2025-02-27 16:00:00+07:00 to 2025-02-28 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.219 - DEBUG - For 2025-02-27 found 54 windows containing the high
+12/03/2025 14:11:00.219 - DEBUG - For 2025-02-27, found 59 windows containing the low
+12/03/2025 14:11:00.219 - DEBUG - For 2025-02-27, found 113 windows containing the low or high
+12/03/2025 14:11:00.223 - INFO - Computing EURUSD high and low windows for: 2025-02-28
+12/03/2025 14:11:00.224 - INFO - Trading day: 2025-02-28 16:00:00+07:00 to 2025-03-01 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.291 - DEBUG - For 2025-02-28 found 47 windows containing the high
+12/03/2025 14:11:00.291 - DEBUG - For 2025-02-28, found 47 windows containing the low
+12/03/2025 14:11:00.291 - DEBUG - For 2025-02-28, found 94 windows containing the low or high
+12/03/2025 14:11:00.291 - INFO - Computing EURUSD high and low windows for: 2025-03-03
+12/03/2025 14:11:00.291 - INFO - Trading day: 2025-03-03 16:00:00+07:00 to 2025-03-04 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.357 - DEBUG - For 2025-03-03 found 55 windows containing the high
+12/03/2025 14:11:00.357 - DEBUG - For 2025-03-03, found 23 windows containing the low
+12/03/2025 14:11:00.357 - DEBUG - For 2025-03-03, found 78 windows containing the low or high
+12/03/2025 14:11:00.357 - INFO - Computing EURUSD high and low windows for: 2025-03-04
+12/03/2025 14:11:00.372 - INFO - Trading day: 2025-03-04 16:00:00+07:00 to 2025-03-05 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.453 - DEBUG - For 2025-03-04 found 33 windows containing the high
+12/03/2025 14:11:00.453 - DEBUG - For 2025-03-04, found 8 windows containing the low
+12/03/2025 14:11:00.456 - DEBUG - For 2025-03-04, found 41 windows containing the low or high
+12/03/2025 14:11:00.456 - INFO - Computing EURUSD high and low windows for: 2025-03-05
+12/03/2025 14:11:00.457 - INFO - Trading day: 2025-03-05 16:00:00+07:00 to 2025-03-06 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.536 - DEBUG - For 2025-03-05 found 38 windows containing the high
+12/03/2025 14:11:00.537 - DEBUG - For 2025-03-05, found 5 windows containing the low
+12/03/2025 14:11:00.538 - DEBUG - For 2025-03-05, found 43 windows containing the low or high
+12/03/2025 14:11:00.538 - INFO - Computing EURUSD high and low windows for: 2025-03-06
+12/03/2025 14:11:00.539 - INFO - Trading day: 2025-03-06 16:00:00+07:00 to 2025-03-07 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.601 - DEBUG - For 2025-03-06 found 20 windows containing the high
+12/03/2025 14:11:00.601 - DEBUG - For 2025-03-06, found 20 windows containing the low
+12/03/2025 14:11:00.601 - DEBUG - For 2025-03-06, found 40 windows containing the low or high
+12/03/2025 14:11:00.601 - INFO - Computing EURUSD high and low windows for: 2025-03-07
+12/03/2025 14:11:00.601 - INFO - Trading day: 2025-03-07 16:00:00+07:00 to 2025-03-08 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.658 - DEBUG - For 2025-03-07 found 39 windows containing the high
+12/03/2025 14:11:00.658 - DEBUG - For 2025-03-07, found 4 windows containing the low
+12/03/2025 14:11:00.658 - DEBUG - For 2025-03-07, found 43 windows containing the low or high
+12/03/2025 14:11:00.658 - INFO - Computing EURUSD high and low windows for: 2025-03-10
+12/03/2025 14:11:00.673 - INFO - Trading day: 2025-03-10 16:00:00+07:00 to 2025-03-11 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.780 - DEBUG - For 2025-03-10 found 26 windows containing the high
+12/03/2025 14:11:00.781 - DEBUG - For 2025-03-10, found 27 windows containing the low
+12/03/2025 14:11:00.782 - DEBUG - For 2025-03-10, found 49 windows containing the low or high
+12/03/2025 14:11:00.782 - INFO - Computing EURUSD high and low windows for: 2025-03-11
+12/03/2025 14:11:00.783 - INFO - Trading day: 2025-03-11 16:00:00+07:00 to 2025-03-12 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.843 - DEBUG - For 2025-03-11 found 32 windows containing the high
+12/03/2025 14:11:00.843 - DEBUG - For 2025-03-11, found 2 windows containing the low
+12/03/2025 14:11:00.843 - DEBUG - For 2025-03-11, found 34 windows containing the low or high
+12/03/2025 14:11:00.843 - INFO - Computing EURUSD high and low windows for: 2025-03-12
+12/03/2025 14:11:00.843 - INFO - Trading day: 2025-03-12 16:00:00+07:00 to 2025-03-13 16:00:00+07:00 Asia/Bangkok
+12/03/2025 14:11:00.922 - DEBUG - For 2025-03-12 found 0 windows containing the high
+12/03/2025 14:11:00.924 - DEBUG - For 2025-03-12, found 0 windows containing the low
+12/03/2025 14:11:00.924 - DEBUG - For 2025-03-12, found 0 windows containing the low or high
+12/03/2025 14:11:00.927 - INFO - Exporting empirical distributions to csv
+12/03/2025 14:11:00.946 - DEBUG - MT5 connection closed
+12/03/2025 14:11:00.946 - INFO - MT5API connection closed.
+12/03/2025 14:11:00.946 - INFO - Exiting run
